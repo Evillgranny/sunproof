@@ -1,14 +1,21 @@
+import $ from 'jquery'
+
 class Modals {
-    constructor(modal) {
-        this.modal = modal
+    showModal (modal) {
+        $(modal).css({display: 'flex'})
+            .animate({opacity: 1}, 500)
     }
 
-    showModal () {
-        this.modal.classList.add('show')
+    hideModal (modal) {
+        $(modal).animate({opacity: 0}, 500)
+        setTimeout(() => {
+            $(modal).css({display: 'none'})
+        },500)
     }
 
-    hideModal () {
-        this.modal.classList.remove('show')
+    btnClick (modal) {
+        let currentModal = document.querySelector(modal)
+        this.showModal(currentModal)
     }
 }
 

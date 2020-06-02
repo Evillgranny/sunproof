@@ -3,8 +3,10 @@ class Tabs {
         this.tabs = tabs
         this.containers = containers
 
-        this.tabs[0].classList.add('active')
-        this.containers[0].classList.add('active')
+        if ( this.tabs.length > 0 ) {
+            this.tabs[0].classList.add('active')
+            this.containers[0].classList.add('active')
+        }
     }
 
     tabClick () {
@@ -20,9 +22,11 @@ class Tabs {
                 allBtns.forEach(j => {
                     j.classList.remove('active')
                 })
+
                 closeBlocks.forEach(j => {
                     j.classList.remove('active')
                 })
+
                 i.classList.add('active')
                 showBlock.classList.add('active')
             }

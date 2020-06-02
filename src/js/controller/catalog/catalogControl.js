@@ -27,7 +27,7 @@ if (window.innerWidth > 991) {
     }
 
     catalogMenu.onclick = e => {
-        if (e.target.classList.contains('popup')) {
+        if (e.target.classList.contains('catalog-menu') || e.target.classList.contains('catalog-menu__left-list')) {
             catalogF.inactiveBtn()
             catalogF.hideMenu()
         }

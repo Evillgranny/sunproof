@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 class RightDots {
     constructor(dotsContainer, sections, dotClass) {
         this.dotsContainer = dotsContainer
@@ -5,6 +7,7 @@ class RightDots {
         this.dotClass = dotClass
         this.dotsArray = []
         this.sectionsArray = Array.prototype.slice.call(this.sections)
+        this.max =  this.sectionsArray.length -1
     }
 
     dotsToDOM () {
@@ -14,18 +17,11 @@ class RightDots {
 
             index === 0 ? dot.classList.add('active') : false
 
-            let top = this.sections[index].offsetTop - 140
-
-
-
             dot.onclick = () => {
                 document.querySelector('.active' + '.' + this.dotClass).classList.remove('active')
                 dot.classList.add('active')
-                window.scrollTo({
-                    top,
-                    left: 0,
-                    behavior: "smooth"
-                })
+
+                $('html').animate({ scrollTop: $(this.sections[index]).offset().top - 139 }, 500)
             }
 
             this.dotsArray.push(dot)
@@ -35,8 +31,10 @@ class RightDots {
             this.dotsContainer.append(i)
         })
 
+
         window.onscroll = () => {
-            let currentIndex = this.sectionsArray.findIndex((i, index) => i.offsetTop > pageYOffset)
+            let currentIndex = this.sectionsArray.findIndex((i, index) => i.getBoundingClientRect().top > 139)
+            currentIndex === -1 ? currentIndex = this.max : false
             document.querySelector('.active' + '.' + this.dotClass).classList.remove('active')
             this.dotsArray[currentIndex].classList.add('active')
         }
@@ -44,3 +42,6 @@ class RightDots {
 }
 
 export { RightDots }
+
+
+

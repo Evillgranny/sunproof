@@ -19,10 +19,6 @@ import { tabsMarquises, tabsPePergolas } from "./controller/tabs/tabsC";
 import { lnSlider } from "./controller/sliders/lastNewsSliderC";
 
 // modals
-import { namePhoneModalF } from "./controller/modalsC/namePhonesModalC";
-import { popupsF} from "./controller/modalsC/popupsC";
-import { thanksModalF } from "./controller/modalsC/thanksModalC";
-import { getPriceF } from "./controller/modalsC/getPriceModalC";
-import { certF } from "./controller/modalsC/certificatesModalC";
+import { modals, popus } from "./controller/modalsC/modalsC";
 
 

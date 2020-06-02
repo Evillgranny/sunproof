@@ -344,7 +344,6 @@ html, body {
 }
 
 .catalog-menu {
-  background: $clearWhite;
   position: fixed;
   top: 140px;
   width: 100%;
@@ -370,9 +369,7 @@ html, body {
   }
 
   &__container {
-    background: $clearWhite;
     position: relative;
-
   }
 
   &__list-item-in {
@@ -384,8 +381,35 @@ html, body {
     display: none;
     overflow-y: auto;
     overflow-x: hidden;
+
     @media screen and (max-width: 1199px) {
       width: 675px;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #777777;
+    padding: 15px 10px 15px 30px;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 991px) {
+      font-size: 32px;
+      line-height: 39px;
+      padding: 0 0 0 120px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 0 0 0 40px;
+    }
+
+    &:hover {
+      text-decoration: none;
     }
   }
 
@@ -395,6 +419,7 @@ html, body {
     align-items: center;
     border-bottom: 1px solid #F8F8F8;
     border-right: 1px solid #F8F8F8;
+    background: $clearWhite;
     width: 285px;
     overflow: hidden;
 
@@ -416,10 +441,10 @@ html, body {
 
     &:hover {
       background: #F8F8F8;
-
       > .catalog-menu__link {
         color: #595959;
-        transform: translateX(10px);
+
+
       }
 
       .catalog-menu__list-item-in {
@@ -427,42 +452,14 @@ html, body {
         flex-grow: 1;
         flex-wrap: wrap;
         align-content: baseline;
+        background: $clearWhite;
         @media screen and (max-width: 991px){
           display: none !important;
         }
       }
     }
   }
-
-  &__link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    color: #777777;
-    padding: 15px 10px 15px 30px;
-    width: 100%;
-    height: 100%;
-    transition: .3s;
-
-    @media screen and (max-width: 991px) {
-      font-size: 32px;
-      line-height: 39px;
-      padding: 0 0 0 120px;
-    }
-    @media screen and (max-width: 575px) {
-      font-size: 20px;
-      line-height: 24px;
-      padding: 0 0 0 40px;
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
-
-
 
 .main {
   overflow: hidden;
@@ -580,16 +577,6 @@ html, body {
           color: $clearWhite;
           text-decoration: none;
         }
-      }
-
-      &__big-mask {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.29) 0%, rgba(13, 13, 13, 0) 52.45%, rgba(13, 13, 13, 0.74) 100%);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
       }
 
       &__left-mask {
@@ -741,7 +728,7 @@ html, body {
   display: flex;
   align-items: flex-end;
   position: relative;
-
+  transition: 5s;
 
   @media screen and (max-width: 991px) {
     width: 100%;
@@ -751,29 +738,20 @@ html, body {
     height: 260px;
   }
 
-  &:hover {
-    .catalog-card__big-mask {
-      display: block;
-    }
-
-    .catalog-card__content {
-      background: transparent;
-    }
-  }
-
-  &__big-mask {
+  &__background {
+    transition: 5s;
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
     top: 0;
-    background: rgba(51, 51, 51, 0.8);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    backface-visibility: hidden;
-    pointer-events: none;
-    border-radius: 10px;
-    display: none;
+    left: 0;
+  }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 10px 10px 20px;
+    .catalog-card__background {
+      transform: scale(1.5);
+    }
   }
 
   &_mini {
@@ -1646,6 +1624,18 @@ html, body {
 
 .portfolio-preview {
 
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 5s;
+  }
+
+
+
   &__card {
     width: calc(33.33% - 20px);
     height: 200px;
@@ -1653,6 +1643,17 @@ html, body {
     display: block;
     text-decoration: none;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+
+    &:hover {
+      .portfolio-preview__background {
+        transform: scale(1.5);
+      }
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+    }
+
 
     @media screen and (max-width: 991px) {
       height: 194px;
@@ -1709,7 +1710,11 @@ html, body {
 }
 
 .last-news {
-  padding-top: 0;
+
+
+  &_main-page {
+    padding-top: 0;
+  }
 
   &__slider {
     width: calc(100% + 30px);
@@ -2088,10 +2093,7 @@ html, body {
   left: 0;
   top: 0;
   display: none;
-
-  &.show {
-    display: flex;
-  }
+  opacity: 0;
 }
 
 .modal-cross {
@@ -2110,6 +2112,7 @@ html, body {
   padding-top: 50px;
   padding-bottom: 80px;
   position: relative;
+  border-radius: 10px;
 }
 
 .certificates{
@@ -2127,4 +2130,70 @@ html, body {
   &__slider-item {
     height: 60vh;
   }
+}
+
+.bread {
+  margin-top: 160px;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 575px) {
+    margin-top: 80px;
+  }
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 6px;
+    margin-bottom: 2px;
+
+    &::after {
+      content: '/';
+      color: $breadColor;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      &::after {
+        content: '';
+      }
+
+      .bread__link {
+        color: $secondTextColorHover;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__link {
+    color: $breadColor;
+    font-size: 16px;
+    line-height: 19px;
+    transition: .3s;
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &:hover {
+      color: $secondTextColorHover;
+      text-decoration: none;
+    }
+  }
+}
+
+.catalog-page-padding {
+  padding-top: 52px;
+  padding-bottom: 0;
 }
