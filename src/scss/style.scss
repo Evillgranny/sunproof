@@ -678,6 +678,19 @@ html, body {
   }
 }
 
+.default-sub-title {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 30px;
+  color: $secondTextColor;
+
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+}
+
 
 
 .section-padding {
@@ -1653,6 +1666,7 @@ html, body {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    transition: 5s;
 
     &:hover {
       .portfolio-preview__background {
@@ -1713,6 +1727,14 @@ html, body {
     @media screen and (max-width: 575px) {
       margin-top: 30px;
     }
+  }
+
+  &_portfolio {
+    width: auto;
+    display: inline-flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 228px;
   }
 
   &_last-news {
@@ -2527,3 +2549,106 @@ html, body {
     }
   }
 }
+
+
+.portfolio {
+  padding-top: 52px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 0;
+  }
+
+
+  &__slider {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    @media screen and (max-width: 575px) {
+      width: calc(100% - 30px);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slick-slide {
+      margin-right: 15px;
+      margin-left: 15px;
+      padding: 3px;
+
+      @media screen and (max-width: 575px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &__item {
+      border-radius: 10px;
+      overflow: hidden;
+      background: $clearWhite;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+
+    &__img {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 991px) {
+        height: 170px;
+      }
+    }
+
+    &__text-container {
+      padding: 0 15px 20px 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 19px;
+      color: $textColor;
+
+      @media screen and (max-width: 575px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__date {
+      font-size: 16px;
+      line-height: 19px;
+
+      @media screen and (max-width: 575px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 24px;
+      color: $secondTextColor;
+      display: block;
+      text-align: center;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: .5s;
+
+      &:hover {
+        color: $secondTextColorHover;
+        text-decoration: none;
+      }
+
+      &__shared-img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+

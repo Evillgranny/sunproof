@@ -1,12 +1,12 @@
 import $ from "jquery";
 
-class LastNewsSlider {
+class Slider321 {
     constructor(slider) {
         this.slider = slider
     }
 
     sliderInit () {
-        if (this.slider && !this.slider.classList.contains('slick-initialized')) {
+        if ($(this.slider) && !$(this.slider).hasClass('slick-initialized')) {
             $(this.slider).slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -33,4 +33,4 @@ class LastNewsSlider {
     }
 }
 
-export { LastNewsSlider }
+export { Slider321 }

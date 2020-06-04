@@ -16,7 +16,7 @@ import { rd } from "./controller/rightDots/rightDots";
 import { tabsMarquises, tabsPePergolas } from "./controller/tabs/tabsC";
 
 // sliders
-import { lnSlider } from "./controller/sliders/lastNewsSliderC";
+import { slider321F } from "./controller/sliders/slider-3-2-1C";
 import { cSlider} from "./controller/sliders/commentSliderC";
 
 // modals

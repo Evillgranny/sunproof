@@ -60,6 +60,7 @@ const config = {
               ident: "postcss",
               sourceMap: true,
               plugins: () => [
+                require("autoprefixer")(),
                 require("cssnano")({
                   preset: [
                     "default",
@@ -69,9 +70,7 @@ const config = {
                       }
                     }
                   ]
-                }),
-                require("autoprefixer")(),
-                require("css-mqpacker")()
+                })
               ]
             }
           },

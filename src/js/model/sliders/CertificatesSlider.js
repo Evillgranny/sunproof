@@ -1,7 +1,7 @@
 import $ from 'jquery'
-import {LastNewsSlider } from "./LastNewsSlider";
+import {Slider321 } from "./Slider-3-2-1";
 
-class CertificatesSlider extends LastNewsSlider{
+class CertificatesSlider extends Slider321{
     constructor(slider) {
         super(slider);
     }
