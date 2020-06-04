@@ -17,6 +17,7 @@ import { tabsMarquises, tabsPePergolas } from "./controller/tabs/tabsC";
 
 // sliders
 import { lnSlider } from "./controller/sliders/lastNewsSliderC";
+import { cSlider} from "./controller/sliders/commentSliderC";
 
 // modals
 import { modals, popus } from "./controller/modalsC/modalsC";

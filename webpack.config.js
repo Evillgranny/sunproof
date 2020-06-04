@@ -69,7 +69,9 @@ const config = {
                       }
                     }
                   ]
-                })
+                }),
+                require("autoprefixer")(),
+                require("css-mqpacker")()
               ]
             }
           },
