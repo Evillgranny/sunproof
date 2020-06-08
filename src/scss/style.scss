@@ -24,7 +24,7 @@ html, body {
 }
 
 .header {
-  background: $clearWhite;
+  background: rgba(255,255,255,.9);
   height: 80px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -90,8 +90,9 @@ html, body {
   }
 
   &__menu {
-    background: $dirtyWhite;
+    background: rgba(248, 248, 248, .8);
     height: 60px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
     @media screen and (max-width: 991px) {
       background: $clearWhite;
       height: 100%;
@@ -368,19 +369,40 @@ html, body {
     }
   }
 
+  &__lists-container {
+    display: none;
+    width: 854px;
+    position: absolute;
+    top: 0;
+    left: 285px;
+
+    @media screen and (max-width: 1199px) {
+      width: 670px;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none !important;
+    }
+
+    .catalog-menu__item {
+      width: 100% !important;
+    }
+  }
+
   &__container {
     position: relative;
+    overflow-x: hidden;
   }
 
   &__list-item-in {
-    position: absolute;
-    left: 285px;
-    top: 0;
-    width: 855px;
+    width: 427px;
     height: 550px;
-    display: none;
     overflow-y: auto;
     overflow-x: hidden;
+
+    &_second {
+
+    }
 
     @media screen and (max-width: 1199px) {
       width: 675px;
@@ -433,6 +455,23 @@ html, body {
       border: none;
       width: 50%;
       display: flex;
+      background: $clearWhite;
+    }
+
+    &_first {
+      color: #fff;
+      background: transparent;
+
+      &:hover {
+        background: transparent !important;
+        .catalog-menu__link {
+          color: $clearWhite !important;
+        }
+      }
+
+      .catalog-menu__link {
+        color: $clearWhite;
+      }
     }
 
     &:last-child {
@@ -442,24 +481,17 @@ html, body {
     &:hover {
       background: #F8F8F8;
       > .catalog-menu__link {
-        color: #595959;
-
-
+        color: $secondTextColorHover;
       }
 
-      .catalog-menu__list-item-in {
+      .catalog-menu__lists-container {
         display: flex;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        align-content: baseline;
-        background: $clearWhite;
-        @media screen and (max-width: 991px){
-          display: none !important;
-        }
       }
     }
   }
 }
+
+
 
 .main {
   overflow: hidden;
@@ -2093,7 +2125,7 @@ html, body {
 .right-dots {
   position: fixed;
   top: 50%;
-  right: 52px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2651,4 +2683,67 @@ html, body {
   }
 }
 
+.news {
+  padding-top: 52px;
 
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc(33.33% - 20px);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      width: calc(50% - 15px);
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__bottom {
+    padding: 20px;
+    @media screen and (max-width: 991px) {
+      padding: 20px 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 350px;
+    display: block;
+
+    @media screen and (max-width: 991px) {
+      height: 345px;
+    }
+    @media screen and (max-width: 575px) {
+      height: 290px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $textColor;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 35px;
+    }
+  }
+}
