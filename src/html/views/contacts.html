@@ -1,0 +1,234 @@
+<% var data = {
+title: "Sunproof | Контакты"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="bread">
+    <div class="container">
+        <ul class="bread__list">
+            <li class="bread__item">
+                <a href="index.html" class="bread__link">
+                    Главная
+                </a>
+            </li>
+            <li class="bread__item">
+                <p  class="bread__link">
+                    Контакты
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section contacts section-padding">
+    <div class="container">
+        <h2 class="default-section-title">Контакты</h2>
+
+        <div class="contacts__cards">
+            <div class="contacts__card">
+                <div class="contacts__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12cf5c6b3fc20cd6a681643d1ba970ad49f461337c58416c7d9b868cd846a727&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts__description">
+                    <h3 class="contacts__description__main">Москва</h3>
+                    <ul class="contacts__description__list">
+                        <li class="contacts__description__item">
+                            ул. Бутлерова, 17Б
+                        </li>
+                        <li class="contacts__description__item">
+                            <a class="contacts__description__link" href="tel: +7 (495) 128-15-48">+7 (495) 128-15-48</a>
+                            <a class="contacts__description__link" href="tel: +7 (495) 128-15-48">+7 (926) 138-61-20</a>
+                        </li>
+                        <li class="contacts__description__item">
+                            <a href="mailto: info@sunproofpro.ru" class="contacts__description__link">info@sunproofpro.ru</a>
+                        </li>
+                        <li class="contacts__description__item">
+                            Предупредите о вашем визите
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contacts__card">
+                <div class="contacts__map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45aaa3d3017144523397823f3fcf69fdfc2dd75224c9b1a1bb72541edaf186c1&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts__description">
+                    <h3 class="contacts__description__main">Санкт-Петербург</h3>
+                    <ul class="contacts__description__list">
+                        <li class="contacts__description__item">
+                            ул. Складская, 4
+                        </li>
+                        <li class="contacts__description__item">
+                            <a class="contacts__description__link" href="tel: +7 (917) 542-81-99">+7 (917) 542-81-99</a>
+                        </li>
+                        <li class="contacts__description__item">
+                            <a href="mailto: info@sunproofpro.ru" class="contacts__description__link">info@sunproofpro.ru</a>
+                        </li>
+                        <li class="contacts__description__item">
+                            Предупредите о вашем визите
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts__requisites">
+            <h3 class="contacts__requisites__main">Реквизиты</h3>
+            <div class="contacts__requisites__lists">
+                <ul class="contacts__requisites__list">
+                   <li class="contacts__requisites__item">ООО «КНОРД»</li>
+                   <li class="contacts__requisites__item">ОГРН 1197746117744</li>
+                   <li class="contacts__requisites__item">ИНН 7704477667</li>
+                   <li class="contacts__requisites__item">КПП 770401001</li>
+                   <li class="contacts__requisites__item">Юр. адрес: 119435, Москва, ул. Б. Саввинский пер-к,    д. 9, стр. 3, комн S3</li>
+                   <li class="contacts__requisites__item">Почтовый адрес: 117342, Москва, Бутлерова, 17Б</li>
+                   <li class="contacts__requisites__item">Тел.: +7 (495) 128-97-28, +7 (917) 542-81-99</li>
+                </ul>
+
+                <ul class="contacts__requisites__list">
+                    <li class="contacts__requisites__item">Банк</li>
+                    <li class="contacts__requisites__item">ТОЧКА ПАО БАНКА «ФК ОТКРЫТИЕ»</li>
+                    <li class="contacts__requisites__item">г. Москва</li>
+                    <li class="contacts__requisites__item">КПП 770401001</li>
+                    <li class="contacts__requisites__item">р/с 40702810701500035446</li>
+                    <li class="contacts__requisites__item">к/с 30101810845250000999</li>
+                    <li class="contacts__requisites__item">БИК 044525999</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="orange-bg orange-padding section competitors-offets">
+    <div class="container container_competitors-offets">
+
+        <div class="competitors-offets__text">
+            <h3 class="white-subtitle">Нашли выгодное предложение у конкурентов?</h3>
+            <p class="white-description white-description_competitors-offets">
+                Отправь нам это комерческое предложение и
+                мы предоставим вам лучшее условие.
+            </p>
+        </div>
+
+        <form action="" class="name-phone-form name-phone-form_file">
+            <div class="name-phone-form__input-file-container">
+                <label class="name-phone-form__label">
+                    <input class="name-phone-form__input-file" type="file">
+                    <img src="img/svg/file-form.svg" alt="" class="name-phone-form__file-img">
+                    <p class="name-phone-form__file-img-description">
+                        Загрузите файл с предложением
+                    </p>
+                </label>
+            </div>
+
+            <div class="name-phone-form__inputs name-phone-form__inputs__file">
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="Ваше имя">
+                </div>
+
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="+7 ___  ___ __ __">
+                </div>
+
+                <input type="submit" class="name-phone-form__submit default-button" value="Отправить">
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="last-news  section section-padding">
+    <div class="container container_last-news">
+        <h2 class="default-section-title">Последние новости</h2>
+
+        <div class="last-news__slider slider-3-2-1">
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+        </div>
+
+        <a href="" class="show-more default-button show-more_last-news">
+            Больше новостей
+        </a>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -2685,6 +2685,9 @@ html, body {
 
 .news {
   padding-top: 52px;
+  @media screen and (max-width: 991px) {
+    padding-top: 0;
+  }
 
   &__cards {
     display: flex;
@@ -2744,6 +2747,140 @@ html, body {
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 35px;
+    }
+  }
+}
+
+.contacts {
+  padding-top: 52px;
+  @media screen and (max-width: 991px) {
+    padding-top: 0;
+  }
+
+  &__map {
+    height: 350px;
+
+    @media screen and (max-width: 991px) {
+      height: 229px;
+    }
+
+    @media screen and (max-width: 575px) {
+      height: 192px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc(50% - 15px);
+    margin-bottom: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 52px;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    padding: 20px 52px;
+
+    @media screen and (max-width: 991px) {
+      padding: 20px 19px;
+    }
+    &__main {
+      font-size: 20px;
+      line-height: 24px;
+      color: $secondTextColorHover;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__item {
+      font-size: 20px;
+      line-height: 24px;
+      color: $textColor;
+      margin-bottom: 10px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__link {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+
+      &:hover {
+        color: $textColor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__requisites {
+    &__main {
+      font-size: 32px;
+      line-height: 39px;
+      color: $secondTextColorHover;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 575px){
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__list {
+      width: calc(50% - 15px);
+
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    &__item {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 575px) {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
