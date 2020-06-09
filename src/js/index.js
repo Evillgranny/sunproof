@@ -17,9 +17,13 @@ import { tabsMarquises, tabsPePergolas } from "./controller/tabs/tabsC";
 
 // sliders
 import { slider321F } from "./controller/sliders/slider-3-2-1C";
+import { slider221F } from "./controller/sliders/slider-2-2-1C";
 import { cSlider} from "./controller/sliders/commentSliderC";
 
 // modals
 import { modals, popus } from "./controller/modalsC/modalsC";
+
+//rating
+import { ratingF } from "./controller/RatingC/RatingC";
 
 
