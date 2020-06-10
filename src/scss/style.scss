@@ -3195,4 +3195,71 @@ html, body {
   }
 }
 
+.project {
 
+  &__content {
+    font-size: 24px;
+    line-height: 29px;
+    color: $textColor;
+    font-family: $inter;
+
+    img {
+      max-width: 100%;
+    }
+
+    a {
+      color: $secondTextColorHover;
+      text-decoration: underline;
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 52px;
+    }
+
+    &__date {
+      margin-left: 30px;
+    }
+
+    &__author {
+      margin-left: 30px;
+    }
+
+    &__author-link {
+      color: $textColor;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+  &__slider {
+    margin-top: 37px;
+    margin-bottom: 37px;
+  }
+}
+
+.default-slider {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+
+  @media screen and (max-width: 575px) {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    width: calc(100% - 30px) !important;
+    margin: 15px;
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

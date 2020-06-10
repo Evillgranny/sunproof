@@ -18,6 +18,7 @@ import { tabsMarquises, tabsPePergolas } from "./controller/tabs/tabsC";
 // sliders
 import { slider321F } from "./controller/sliders/slider-3-2-1C";
 import { slider221F } from "./controller/sliders/slider-2-2-1C";
+import { slider111F} from "./controller/sliders/slider-1-1-1C";
 import { cSlider} from "./controller/sliders/commentSliderC";
 
 // modals
