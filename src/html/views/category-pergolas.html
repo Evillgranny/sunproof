@@ -1,0 +1,759 @@
+<% var data = {
+title: "Sunproof | Перголы"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="section category category_main position-relative">
+    <div class="container container_about-main d-flex justify-content-center flex-column h-100 position-relative">
+        <section class="bread bread_bg">
+            <div class="container">
+                <ul class="bread__list">
+                    <li class="bread__item">
+                        <a href="index.html" class="bread__link bread__link_bg">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread__item">
+                        <p  class="bread__link bread__link_bg">
+                            Перголы
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<section class="categories-preview section-padding section dirty-white-bg">
+    <div class="container container_categories-preview">
+        <h2 class="default-section-title">Перголы Sunproof</h2>
+
+        <div class="tabs-navigation">
+            <a href="#pergolasView" class="tabs-navigation__tab active" data-navigation="pergolas">По видам</a>
+            <a href="#pergolasAsIntended" class="tabs-navigation__tab" data-navigation="pergolas">По назначению</a>
+        </div>
+
+        <div class="tabs-container" id="pergolasView" data-navigation="pergolas">
+            <div class="categories-preview__content">
+                <div class="categories-preview__cards">
+                    <div class="catalog-card">
+                        <div class="catalog-card__background"></div>
+                        <div class="catalog-card__background" style="background: url(img/pergolas-preview/1.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Ламельная пергола</h3>
+                            <p class="catalog-card__description">
+                                Полностью автоматическая пергола с поворотными алюминиевыми ламелями отлично защищает от солнца или дождя. Отлично интегрируется с остеклением или вертикальными маркиз.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card">
+                        <div class="catalog-card__background"></div>
+                        <div class="catalog-card__background" style="background: url(img/pergolas-preview/2.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Пергола с раздвижным тентом</h3>
+                            <p class="catalog-card__description">
+                                Перголы с автоматической тентовой сдвижной крышей. Современный аналог беседки. В нее можно встроить освещение для создания уюта вечером.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-preview__description">
+                        <p class="categories-preview__description__text">
+                            Перголы – беседка или летняя терраса с автоматическими поворотными ламелями или сдвижной тентовой крышей,
+                            предназначенные для обустройства уличных площадок, веранд или открытых помещений от солнца ветра или дождя.
+                            Чаще всего их используют для создания зоны отдыха летних кафе, террас ресторанов, дачных беседок, веранд частных домов.
+                            Для перголы не требуется капитального строительства с заливкой фундамента, возведения стропильных или других
+                            строительных систем. Вы экономите на возведении уютной летней зоны отдыха. Плюс ко всему пергола легко собирается и
+                            при необходимости разбирается на зимний период. SunProof Systems предлагает перголы подходящего для вас типа.
+                            Мы вышлем к вам специалиста на обмер бесплатно.
+                        </p>
+
+                        <div class="btns-container-categories">
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Примеры работ
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn modal-btn" data-modal="#findOutprices">
+                                Узнать цены
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Видеообзор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-container" id="pergolasAsIntended" data-navigation="pergolas">
+            <div class="categories-preview__content">
+
+                <div class="categories-preview__cards">
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/pergolas-preview/3.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Пергола для ресторана</h3>
+                            <p class="catalog-card__description">
+                                Пергола для создания дополнительных посадочных мест террас ресторанов с автоматическими крышами.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/pergolas-preview/4.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Беседка для дачи</h3>
+                            <p class="catalog-card__description">
+                                Современный вид беседок для дачных домов с автоматическими раздвижными крышами.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/pergolas-preview/5.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Крыша для террасы</h3>
+                            <p class="catalog-card__description">
+                                Автоматическая сдвижная крыша может устанавливаться в качестве полноценной крыши вашей веранды.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/pergolas-preview/6.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Пергола для коттеджа и загородного дома</h3>
+                            <p class="catalog-card__description">
+                                Полноценная веранда для коттеджа или загородного дома.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background" style="background: url(img/pergolas-preview/7.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Терраса кафе</h3>
+                            <p class="catalog-card__description">
+                                Для обустройства террасы кафе используют автоматическую перголу с поворотными ламелями или сдвижным тентом.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background" style="background: url(img/pergolas-preview/8.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Летняя веранда</h3>
+                            <p class="catalog-card__description">
+                                Создание полноценной летней зоны отдыха при помощи перголы с тентовой сдвижной крышей или автоматическими поворотными ламелями.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categories-preview__description">
+                        <p class="categories-preview__description__text">
+                            Перголы – беседка или летняя терраса с автоматическими поворотными ламелями или сдвижной тентовой крышей,
+                            предназначенные для обустройства уличных площадок, веранд или открытых помещений от солнца ветра или дождя.
+                            Чаще всего их используют для создания зоны отдыха летних кафе, террас ресторанов, дачных беседок,
+                            веранд частных домов. Для перголы не требуется капитального строительства с заливкой фундамента, возведения
+                            стропильных или других строительных систем. Вы экономите на возведении уютной летней зоны отдыха.
+                            Плюс ко всему пергола легко собирается и при необходимости разбирается на зимний период. SunProof
+                            Systems предлагает перголы подходящего для вас типа. Мы вышлем к вам специалиста на обмер бесплатно.
+                        </p>
+
+                        <div class="btns-container-categories">
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Примеры работ
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn modal-btn" data-modal="#findOutprices">
+                                Узнать цены
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Видеообзор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section pergolas-steps orange-padding orange-bg">
+    <div class="container">
+        <h2 class="default-section-title default-section-title_white">Ваша пергола за 6 шагов!</h2>
+
+        <div class="pergolas-steps__content">
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">1</div>
+                <p class="pergolas-steps__text">
+                    Звоните или оставляете заявку.
+                    Мы отвечаем на все ваши вопросы и обсуждаем все детали;
+                </p>
+            </div>
+
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">4</div>
+                <p class="pergolas-steps__text">
+                    Подготавливаем и высылаем на согласование дизайн-проект;
+                </p>
+            </div>
+
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">2</div>
+                <p class="pergolas-steps__text">
+                    Высылаем вам предварительный бесплатный просчет будущей перголы, учитывая все детали;
+                </p>
+            </div>
+
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">5</div>
+                <p class="pergolas-steps__text">
+                    Подписываем договор и запускаем проект в производство;
+                </p>
+            </div>
+
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">3</div>
+                <p class="pergolas-steps__text">
+                    Договариваемся на удобное время, выезжаем на замер. Формируем итоговую сумму и сроки;
+                </p>
+            </div>
+
+            <div class="pergolas-steps__item">
+                <div class="pergolas-steps__number">6</div>
+                <p class="pergolas-steps__text">
+                    Доставляем и монтируем вашу перголу под ключ
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-padding pergola-or-veranda">
+    <div class="container">
+        <h2 class="default-section-title">Пергола или веранда?</h2>
+
+        <div class="pergola-or-veranda__content">
+            <ul class="pergola-or-veranda__list">
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_first">
+                    Важные характеристики
+                </li>
+                <li class="pergola-or-veranda__item">
+                    Пожаробезопасность
+                </li>
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_big-mobile">
+                    Устойчивость к влажности,
+                    к гниению и атакам насекомых
+                </li>
+                <li class="pergola-or-veranda__item">
+                    Долговечность
+                </li>
+                <li class="pergola-or-veranda__item">
+                    Быстрая установка
+                </li>
+                <li class="pergola-or-veranda__item">
+                    Мобильность конструкции
+                </li>
+                <li class="pergola-or-veranda__item">
+                    Экологичность
+                </li>
+            </ul>
+
+            <ul class="pergola-or-veranda__list pergola-or-veranda__list_orange">
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_first" style="background: url(img/category-pergolas/2.jpg) 50%/cover">
+
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_big-mobile">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+            </ul>
+
+            <ul class="pergola-or-veranda__list pergola-or-veranda__list_black">
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_first" style="background: url(img/category-pergolas/3.jpg) 50%/cover">
+
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/cross.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item pergola-or-veranda__item_big-mobile">
+                    <img src="img/svg/cross.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/cross.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/cross.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/cross.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+                <li class="pergola-or-veranda__item">
+                    <img src="img/svg/ga.svg" alt="" class="pergola-or-veranda__item__img">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section pergolas-14 section-padding">
+    <div class="container">
+        <h2 class="default-section-title">Пергола за 14 дней!</h2>
+
+        <div class="pergolas-14__content">
+            <img src="img/category-pergolas/4.jpg" alt="" class="pergolas-14__img">
+
+            <div class="d-flex align-items-center flex-column">
+                <h3 class="pergolas-14__title">
+                    Изготовим и привезем вашу индивидуальную перголу
+                    <span>за 14 дней</span> и бережно смонтируем её <span>за 6-12 часов.</span>
+                </h3>
+
+                <p class="pergolas-14__text">
+                    Опыт наших монтажников в среднем более 10 лет,
+                    а <br> правильный монтаж = залог долгой службы изделия.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="orange-bg orange-padding section competitors-offets">
+    <div class="container container_competitors-offets">
+
+        <div class="competitors-offets__text competitors-offets__text__number">
+            <h3 class="white-subtitle white-subtitle_number">
+                Получите в подарок
+                <span>10 000</span> рублей
+                на покупку перголы!
+            </h3>
+        </div>
+
+        <form action="" class="name-phone-form name-phone-form_number">
+            <div class="name-phone-form__left">
+                <h3 class="name-phone-form__title">Оставьте номер телефона</h3>
+                <p class="name-phone-form__text">И через 27 секунд вы получите промокод на скидку!</p>
+            </div>
+
+            <div class="name-phone-form__inputs name-phone-form__inputs_number">
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="Ваше имя">
+                </div>
+
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="+7 ___  ___ __ __">
+                </div>
+
+                <input type="submit" class="name-phone-form__submit default-button" value="Отправить">
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="section advantages section-padding">
+    <div class="container">
+        <h2 class="default-section-title">Преимущества наших прегол</h2>
+
+        <div class="advantages__content">
+            <div class="advantages__item">
+                <div class="advantages__number">1</div>
+
+                <h4 class="advantages__title">Быстрая установка</h4>
+                <p class="advantages__text">
+                    Главное преимущество перголы — скорость и чистота установки.
+                    Возведение конструкции обходится без традиционных для
+                    классического строительства грязи и пыли и
+                    устанавливается всего за 6-12 часов.
+                </p>
+            </div>
+
+            <div class="advantages__item">
+                <div class="advantages__number">2</div>
+
+                <h4 class="advantages__title">Мобильность конструкции</h4>
+                <p class="advantages__text">
+                    При необходимости её можно быстро разобрать и переставить на другое место,
+                    чего нельзя добиться от беседки или веранды.
+                </p>
+            </div>
+
+            <div class="advantages__item">
+                <div class="advantages__number">3</div>
+
+                <h4 class="advantages__title">Экологичность материалов</h4>
+                <p class="advantages__text">
+                    Исследования доказали, что алюминий не уступает древесине
+                    по экологичности. Даже лучше! Он устойчив к влажности и гниению.
+                </p>
+            </div>
+
+            <div class="advantages__item">
+                <div class="advantages__number">4</div>
+
+                <h4 class="advantages__title">Выгодная стоимость</h4>
+                <p class="advantages__text">
+                    Стоимость перголы на порядок ниже аналогичных систем из бетона или кирпича.
+                </p>
+            </div>
+
+            <div class="advantages__item">
+                <div class="advantages__number">5</div>
+
+                <h4 class="advantages__title">Долговечность материалов</h4>
+                <p class="advantages__text">
+                    При необходимости её можно быстро разобрать и переставить
+                    на другое место, чего нельзя добиться от беседки или веранды.
+                </p>
+            </div>
+
+            <div class="advantages__item">
+                <div class="advantages__number">6</div>
+
+                <h4 class="advantages__title">Высокая ветроустойчивость</h4>
+                <p class="advantages__text">
+                    6-й класс ветроустойчивости позволяет использовать перголу
+                    при оформлении панорамного ресторана на открытой крыше,
+                    вблизи водоёмов и даже на ветреной стороне частного загородного дома.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-padding recommendations recommendations_pergolas">
+    <div class="container">
+        <h2 class="default-section-title">Рекомендуем к перголам</h2>
+
+        <h3 class="recommendations__title">
+            Остекление прегол
+        </h3>
+
+        <div class="recommendations__item">
+            <p class="recommendations__text">
+                Придайте более статусный вид вашей перголе за счет сдвижного
+                или гильотинного остекления. Данное остекление увеличит
+                сезонность летней площадки вашего кафе или ресторана.
+                Остекление и обогрев делают перголу полноценным помещением. <br><br>
+                При помощи остекления вы получаете полноценное комфортное помещение. Теперь заведение может работать круглый год.
+                <br><br>
+                Крыша и остекление вашей перголы могут открываться и закрываться самостоятельно при помощи датчиков дождя и ветра.
+
+                <a href="#" class="default-button recommendations__button">
+                    Подробнее
+                </a>
+            </p>
+
+            <img src="img/category-pergolas/5.jpg" alt="" class="recommendations__img">
+        </div>
+
+        <h3 class="recommendations__title">
+            Вертикальные маркизы
+        </h3>
+
+        <div class="recommendations__item recommendations__item_reverse">
+            <p class="recommendations__text">
+                Вертикальная маркиза — это тентовая конструкция, которая открывается вертикально вниз. <br>
+                <br>
+                Вертикальные уличные маркизы универсальны и успешно используется как в городской среде,
+                так и в загородном строительстве. В качестве навесов на окнах они защищают помещение от
+                избытка солнечного света и теплового излучения, препятствуя перегреву, и поддерживая комфортную
+                атмосферу в помещении. В беседах и уличных верандах они защищают от солнца, ветра, москитов, и
+                посторонних взглядов. Особенно популярны вертикальные маркизы с прозрачными вставками из ПВХ,
+                они позволяют сохранить обзор.
+
+                <a href="#" class="default-button recommendations__button">
+                    Подробнее
+                </a>
+            </p>
+
+            <img src="img/category-pergolas/6.jpg" alt="" class="recommendations__img">
+        </div>
+    </div>
+</section>
+
+<section class="section who-we orange-padding section_who-we position-relative">
+    <div class="container container_who-we">
+
+        <h2 class="default-section-title default-section-title_white">Почему мы ?</h2>
+
+        <div class="who-we__content ">
+            <div class="who-we__numbers">
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">12</div>
+                    <p class="who-we__numbers__item__text">
+                        Предоставляем гарантию на всю продукцию и все виды работ от 12 месяцев
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">5</div>
+                    <p class="who-we__numbers__item__text">
+                        Приводите друзей, обращайтесь повторно и получайте от 5% скидки
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">10</div>
+                    <p class="who-we__numbers__item__text">
+                        Десятилетний отпыт работы. Индивидуальный подход
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="name-phone-form">
+            <div class="name-phone-form__left">
+                <h3 class="name-phone-form__title">Получите консультацию</h3>
+                <p class="name-phone-form__text">Оставьте нам свой номер и мы вам перезвоним</p>
+            </div>
+
+            <div class="name-phone-form__inputs">
+                <div class="position-relative error">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="Ваше имя">
+                </div>
+
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="+7 ___  ___ __ __">
+                </div>
+
+                <input type="submit" class="name-phone-form__submit default-button" value="Заказать звонок">
+            </div>
+        </form>
+    </div>
+    <img src="img/category-pergolas/7.jpg" alt="" class="who-we-img">
+</section>
+
+<section class="section-padding section additional-options">
+    <div class="container container_additional-options">
+        <h2 class="default-section-title">Дополнительные опции</h2>
+
+        <div class="additional-options__cards">
+            <a href="#" class="additional-options__card">
+                <img src="img/additional-options/1.png" alt="" class="additional-options__card__img">
+                <div class="additional-options__card__text-block">
+                    <h3 class="additional-options__card__title">Автоматическое управление</h3>
+                    <p class="additional-options__card__description">
+                        Электродвигатели на пульте управления или радиокнопке,
+                        солнечно-ветровая автоматичка и датчики упрощают управление
+                        солнцезащитными системами и добавляют комфорт в использовании.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#" class="additional-options__card">
+                <img src="img/additional-options/2.png" alt="" class="additional-options__card__img">
+                <div class="additional-options__card__text-block">
+                    <h3 class="additional-options__card__title">LED-освещение и обогрев</h3>
+                    <p class="additional-options__card__description">
+                        Освещение террас и веранд в вечернее время добавляет визуальный комфорт,
+                        а обогрев сохраняет тепло на террасе при понижении температуры, а также зимой.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#" class="additional-options__card">
+                <img src="img/additional-options/3.png" alt="" class="additional-options__card__img">
+                <div class="additional-options__card__text-block">
+                    <h3 class="additional-options__card__title">Умный дом</h3>
+                    <p class="additional-options__card__description">
+                        Все автоматические системы солнцезащитных
+                        конструкции Sunproof могут интегрироваться с Умным домом.
+                    </p>
+                </div>
+            </a>
+
+
+
+            <a href="#" class="additional-options__card">
+                <img src="img/additional-options/4.png" alt="" class="additional-options__card__img">
+                <div class="additional-options__card__text-block">
+                    <h3 class="additional-options__card__title">Печать на ткани для маркиз и пергол</h3>
+                    <p class="additional-options__card__description">
+                        Печать на маркизах и перголах позволяет брендировать солнцезащитную
+                        конструкцию вашим логотипом, а также можно нанести полноцветные изображения для создания уюта.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-preview section section-padding">
+    <div class="container container_portfolio-preview">
+        <h2 class="default-section-title">Портфолио</h2>
+
+        <div class="portfolio-preview__cards">
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/1.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/2.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/3.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/4.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/5.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/6.jpg) no-repeat center center / cover"></div>
+            </a>
+        </div>
+
+        <a href="#" class="show-more default-button">
+            Больше работ
+        </a>
+    </div>
+</section>
+
+<section class="last-news last-news_main-page section section-padding">
+    <div class="container container_last-news">
+        <h2 class="default-section-title">Последние новости</h2>
+
+        <div class="last-news__slider slider-3-2-1">
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+        </div>
+
+        <a href="" class="show-more default-button show-more_last-news">
+            Больше новостей
+        </a>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

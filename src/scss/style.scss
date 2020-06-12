@@ -1653,6 +1653,29 @@ html, body {
   color: $clearWhite;
   margin-bottom: 20px;
 
+  &_number {
+    width: 326px;
+    @media screen and (max-width: 991px) {
+      width: auto;
+    }
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 991px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+
   @media screen and (max-width: 991px) {
     font-size: 24px;
     line-height: 29px;
@@ -1690,6 +1713,11 @@ html, body {
 .competitors-offets {
   &__text {
     width: 500px;
+
+    &__number {
+      width: auto;
+      margin-bottom: 0 !important;
+    }
 
     @media screen and (max-width: 991px) {
       width: 100%;
@@ -3261,5 +3289,453 @@ html, body {
 
   &__img {
     width: 100%;
+  }
+}
+
+.category {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/category-pergolas/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.pergolas-steps {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__number {
+    width: 95px;
+    height: 95px;
+    background: $clearWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(198, 75, 7, 0.62);
+    font-size: 72px;
+    line-height: 87px;
+    font-weight: 700;
+    color: $secondTextColorHover;
+    margin-right: 30px;
+    min-width: 95px;
+
+    @media screen and (max-width: 991px) {
+      margin-right: 12px;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      line-height: 36px;
+      min-width: 40px;
+      margin-right: 12px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    color: $clearWhite;
+
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.pergola-or-veranda {
+  @media screen and (max-width: 575px) {
+    overflow-x: auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 575px) {
+      overflow-x: auto;
+      width: 410px;
+    }
+  }
+
+  &__list {
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+
+    @media screen and (max-width: 575px) {
+      width: 130px;
+    }
+
+    .pergola-or-veranda__item:nth-child(even) {
+      background: #ECECEC;
+    }
+
+    &_orange {
+      .pergola-or-veranda__item {
+        background: #FF630B;
+      }
+
+      .pergola-or-veranda__item:nth-child(even) {
+        background: #FF8642;
+      }
+    }
+
+    &_black {
+      .pergola-or-veranda__item {
+        background: #595959;
+      }
+
+      .pergola-or-veranda__item:nth-child(even) {
+        background: #777777;
+      }
+    }
+  }
+
+  &__item {
+    min-height: 62px;
+    padding-left: 46px;
+    padding-right: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $secondTextColor;
+    display: flex;
+    align-items: center;
+    background: #FCFCFC;
+
+    @media screen and (max-width: 991px) {
+      font-size: 12px;
+      line-height: 15px;
+      min-height: 45px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 10px;
+      line-height: 12px;
+      min-height: 25px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+    &_big-mobile{
+      @media screen and (max-width: 575px) {
+        height: 45px;
+      }
+    }
+
+    &_first {
+      font-size: 24px;
+      line-height: 29px;
+      color: #595959;
+      min-height: 180px;
+      font-weight: 400;
+      @media screen and (max-width: 991px) {
+        min-height: 114px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @media screen and (max-width: 575px) {
+        min-height: 66px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (max-width: 991px) {
+        height: 20px;
+      }
+      @media screen and (max-width: 575px) {
+        height: 12px;
+      }
+    }
+  }
+}
+
+.pergolas-14 {
+  padding-top: 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    margin-right: 30px;
+
+    @media screen and (max-width: 991px) {
+      width: 345px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 39px;
+    color: $textColor;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+      line-height: 24px;
+      color: $textColor;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+
+    span {
+      color: $secondTextColorHover;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+    align-self: flex-start;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+      color: $textColor;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.advantages {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__number {
+    background: #FF630B;
+    box-shadow: 0px 4px 8px rgba(198, 75, 7, 0.62);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 87px;
+    color: #FFFFFF;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      width: 80px;
+      height: 80px;
+      font-size: 50px;
+      line-height: 61px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    color: $secondTextColor;
+    text-align: center;
+    margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $textColor;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &__item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 52px;
+
+    @media screen and (max-width: 767px) {
+      width: calc(50% - 10px);
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.recommendations {
+  &_pergolas {
+    padding-top: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column-reverse;
+      margin-bottom: 30px;
+    }
+
+    &_reverse {
+      margin-bottom: 0;
+      flex-direction: row-reverse;
+
+      @media screen and (max-width: 575px) {
+        flex-direction: column-reverse;
+      }
+
+      .recommendations__img {
+        margin-left: 0;
+        margin-right: 30px;
+        @media screen and (max-width: 575px) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 445px;
+    margin-left: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+
+    @media screen and (max-width: 991px) {
+      width: 290px;
+    }
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__button {
+    width: 157px;
+    height: 39px;
+    margin-top: 32px;
+
+    @media screen and (max-width: 575px) {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 12px;
+      line-height: 15px;
+      width: 114px;
+      height: 27px;
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $secondTextColor;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 991px){
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    @media screen and (max-width: 575px){
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+
+    @media screen and (max-width: 991px){
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
