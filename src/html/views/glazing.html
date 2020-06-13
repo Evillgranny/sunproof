@@ -1,0 +1,363 @@
+<% var data = {
+title: "Sunproof | Остекление"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="section glazing position-relative">
+    <div class="container container_about-main d-flex justify-content-center flex-column h-100 position-relative">
+        <section class="bread bread_bg">
+            <div class="container">
+                <ul class="bread__list">
+                    <li class="bread__item">
+                        <a href="index.html" class="bread__link bread__link_bg">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread__item">
+                        <p  class="bread__link bread__link_bg">
+                            Остекление
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<section class="categories-preview section-padding section dirty-white-bg">
+    <div class="container container_categories-preview">
+        <h2 class="default-section-title">Остекление</h2>
+
+        <div class="tabs-navigation">
+            <a href="#glazingView" class="tabs-navigation__tab active" data-navigation="glazing">По видам</a>
+            <a href="#glazingAsIntended" class="tabs-navigation__tab" data-navigation="glazing">По назначению</a>
+        </div>
+
+        <div class="tabs-container" id="glazingView" data-navigation="glazing">
+            <div class="categories-preview__content">
+                <div class="categories-preview__cards">
+                    <div class="catalog-card">
+                        <div class="catalog-card__background"></div>
+                        <div class="catalog-card__background" style="background: url(img/glazing/2.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Вертикальное остекление</h3>
+                            <p class="catalog-card__description">
+                                Вертикальное остекление идеально подходят для пергол.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 60 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card">
+                        <div class="catalog-card__background"></div>
+                        <div class="catalog-card__background" style="background: url(img/glazing/3.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Гильотинное остекление</h3>
+                            <p class="catalog-card__description">
+                                Гильотинное остекление идеально подходят для пергол.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 1 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-preview__description">
+                        <p class="categories-preview__description__text">
+                            Раздвижные окна с панелями из закаленного монолитного стекла без краевых профилей,
+                            что позволяет достичь эффекта цельностеклянного. Отдельные панели работают плавно
+                            благодаря тележкам из нержавеющей стали, прикрепленным непосредственно к стеклу,
+                            которые перемещаются по параллельным направляющим, встроенным в нижнюю направляющую.
+                            Прозрачные уплотнительные прокладки обеспечивают защиту от ветра и дождя между одной
+                            панелью и следующей. Текст про остекление!..
+                        </p>
+
+                        <div class="btns-container-categories">
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Примеры работ
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn modal-btn" data-modal="#findOutprices">
+                                Узнать цены
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Видеообзор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-container" id="glazingAsIntended" data-navigation="pergolas">
+            <div class="categories-preview__content">
+
+                <div class="categories-preview__cards">
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/glazing/4.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Остекление для веранд</h3>
+                            <p class="catalog-card__description">
+                                Вертикальное остекление идеально подходят для пергол.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/glazing/5.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Остекление для летних кафе</h3>
+                            <p class="catalog-card__description">
+                                Гильотинное остекление идеально подходят для пергол.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/glazing/6.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Остекление террасы</h3>
+                            <p class="catalog-card__description">
+                                Вертикальное остекление идеально подходят для пергол
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card catalog-card_mini">
+                        <div class="catalog-card__background"  style="background: url(img/glazing/7.jpg) no-repeat center center / cover"></div>
+                        <div class="catalog-card__content">
+                            <h3 class="catalog-card__title">Остекление зимнего сада</h3>
+                            <p class="catalog-card__description">
+                                Гильотинное остекление идеально подходят для пергол.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="catalog-card__link default-button">Подробнее</a>
+                                <p class="catalog-card__price">от 64 380 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categories-preview__description">
+                        <p class="categories-preview__description__text">
+                            Раздвижные окна с панелями из закаленного монолитного стекла без краевых профилей,
+                            что позволяет достичь эффекта цельностеклянного. Отдельные панели работают плавно
+                            благодаря тележкам из нержавеющей стали, прикрепленным непосредственно к стеклу,
+                            которые перемещаются по параллельным направляющим, встроенным в нижнюю направляющую.
+                            Прозрачные уплотнительные прокладки обеспечивают защиту от ветра и дождя между одной
+                            панелью и следующей. Текст про остекление!..
+                        </p>
+
+                        <div class="btns-container-categories">
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Примеры работ
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn modal-btn" data-modal="#findOutprices">
+                                Узнать цены
+                            </button>
+
+                            <button class="default-button default-button_white btns-container-categories__btn">
+                                Видеообзор
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section who-we orange-padding section_who-we position-relative">
+    <div class="container container_who-we">
+
+        <h2 class="default-section-title default-section-title_white">Почему мы ?</h2>
+
+        <div class="who-we__content ">
+            <div class="who-we__numbers">
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">12</div>
+                    <p class="who-we__numbers__item__text">
+                        Предоставляем гарантию на всю продукцию и все виды работ от 12 месяцев
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">5</div>
+                    <p class="who-we__numbers__item__text">
+                        Приводите друзей, обращайтесь повторно и получайте от 5% скидки
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">10</div>
+                    <p class="who-we__numbers__item__text">
+                        Десятилетний отпыт работы. Индивидуальный подход
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="name-phone-form">
+            <div class="name-phone-form__left">
+                <h3 class="name-phone-form__title">Получите консультацию</h3>
+                <p class="name-phone-form__text">Оставьте нам свой номер и мы вам перезвоним</p>
+            </div>
+
+            <div class="name-phone-form__inputs">
+                <div class="position-relative error">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="Ваше имя">
+                </div>
+
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="+7 ___  ___ __ __">
+                </div>
+
+                <input type="submit" class="name-phone-form__submit default-button" value="Заказать звонок">
+            </div>
+        </form>
+    </div>
+    <img src="img/glazing/8.jpg" alt="" class="who-we-img">
+</section>
+
+<section class="portfolio-preview section section-padding">
+    <div class="container container_portfolio-preview">
+        <h2 class="default-section-title">Портфолио</h2>
+
+        <div class="portfolio-preview__cards">
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/1.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/2.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/3.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/4.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/5.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/6.jpg) no-repeat center center / cover"></div>
+            </a>
+        </div>
+
+        <a href="#" class="show-more default-button">
+            Больше работ
+        </a>
+    </div>
+</section>
+
+<section class="last-news last-news_main-page section section-padding">
+    <div class="container container_last-news">
+        <h2 class="default-section-title">Последние новости</h2>
+
+        <div class="last-news__slider slider-3-2-1">
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+        </div>
+
+        <a href="" class="show-more default-button show-more_last-news">
+            Больше новостей
+        </a>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
