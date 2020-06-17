@@ -1,12 +1,26 @@
 import { Tabs } from "../../model/Tabs/Tabs";
-import { allTabsMarquises, allContainersMarquises, allTabsPergolas, allContainersPergolas, allTabsGlazing, allContainersGlazing } from "../../view/tabsV/tabsV";
+import { allTabs } from "../../view/tabsV/tabsV";
+import $ from 'jquery'
+import { sliderInTabsV } from "../../view/slidersV/sliderInTabsV";
+import { SliderInTabs } from "../../model/sliders/SliderInTabs";
 
-let tabsMarquises = new Tabs(allTabsMarquises, allContainersMarquises)
-let tabsPePergolas = new Tabs(allTabsPergolas, allContainersPergolas)
-let tabsGlazing = new Tabs(allTabsGlazing, allContainersGlazing)
+let sliderInTabsF = false
+let allTabsF = new Tabs(allTabs)
 
-tabsMarquises.tabClick()
-tabsPePergolas.tabClick()
-tabsGlazing.tabClick()
+allTabs.forEach(i => {
+    if (i.classList.contains('slider-0-2-1-init')) {
+        i.addEventListener('click', (event) => {
+            allTabsF.tabClick(event, i)
+            if ($(window).width() <= 991) {
+                sliderInTabsF = new SliderInTabs(sliderInTabsV, '.catalog-card')
+                sliderInTabsF.sliderInit()
+            }
+        })
+    } else {
+        i.addEventListener('click', (event) => {
+            allTabsF.tabClick(event, i)
+        })
+    }
+})
 
-export { tabsMarquises, tabsPePergolas, tabsGlazing }
+export { allTabsF }
