@@ -773,7 +773,7 @@ html, body {
   display: flex;
   align-items: flex-end;
   position: relative;
-  transition: 5s;
+  transition: background 5s;
 
   @media screen and (max-width: 991px) {
     width: 100%;
@@ -1900,7 +1900,6 @@ html, body {
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
-    transition: 5s;
 
     &:hover {
       .portfolio-preview__background {
@@ -4147,3 +4146,19 @@ html, body {
     margin-top: 60px;
   }
 }
+
+.category_terrace-board {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/category-terrace-board/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
