@@ -1426,6 +1426,19 @@ html, body {
 
 .categories-preview {
 
+  &__frame {
+    margin-top: 80px;
+    width: 100%;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-top: 20px;
+    }
+  }
+
   &__top-text {
     font-size: 20px;
     line-height: 24px;
@@ -4109,6 +4122,21 @@ html, body {
   height: 520px;
   margin-top: 140px;
   background: url(../img/category-cases/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.category_roller-shutter-systems {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/category-roller-shutter-systems/1.jpg) no-repeat 50%/cover;
 
   @media screen and (max-width: 991px) {
     height: 300px;
