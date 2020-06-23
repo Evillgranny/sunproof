@@ -4835,3 +4835,26 @@ html, body {
     }
   }
 }
+
+.category-printing-on-fabrics {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/category-printing-on-fabrics/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.article {
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
