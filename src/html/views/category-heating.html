@@ -1,0 +1,669 @@
+<% var data = {
+title: "Sunproof | Автоматическое управление"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main class="section category-heating position-relative">
+    <div class="container container_about-main d-flex justify-content-center flex-column h-100 position-relative">
+        <section class="bread bread_bg">
+            <div class="container">
+                <ul class="bread__list">
+                    <li class="bread__item">
+                        <a href="index.html" class="bread__link bread__link_bg">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="bread__item">
+                        <p class="bread__link bread__link_bg">
+                            LED-освещение и обогрев
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<section class="categories-preview  section-padding section">
+    <div class="container container_categories-preview">
+        <div class="tabs-navigation">
+            <a href="#LED" class="tabs-navigation__tab active" data-navigation="heating">LED-освещение</a>
+            <a href="#heating" class="tabs-navigation__tab" data-navigation="heating">Обогрев</a>
+        </div>
+
+        <div class="tabs-container active" id="LED" data-navigation="heating">
+            <h2 class="category-good-main">LED-освещение</h2>
+
+            <p class="category-good-text">
+                Добавьте уют и комфорт с помощью встроенного освещения! <br> <br>
+                Правильное освещение способно полностью изменить вид любого заведения или площадки. Красивый свет добавит романтики и создаст расслабляющую атмосферу. Легкость управления, подарит максимальный комфорт при использовании. Подсветка доступна в цветовой гамме зеленого, красного и синего оттенков, а также в холодном и теплом свете.
+            </p>
+
+            <h2 class="category-good-main">Led-подсветка тентовых пергол</h2>
+
+            <div class="category-good-cards">
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/2.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <p class="category-good-card__description">
+                            <span>Возможности:</span> <br> <br>
+                            - Подсветка в ребрах, полностью заменяет обычное ламповое освещение. <br>
+                            - При этом лампы потребляют в 6 раз меньше электроэнергии, что позволяет значительно сэкономить на электричестве. <br>
+                            - Подсветка доступна в теплом и холодном свете. <br>
+                            - Автоматическая система управления позволит Вам приглушать и увеличивать яркость освещения в конкретно заданное время.<br>
+                            - Управление доступно с пульта или смартфона. <br>
+                            - Мощность светильника: 4,5Вт, 24V (24 диода) <br>
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-good-main">Led-подсветка ламельных пергол</h2>
+
+            <div class="category-good-cards">
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/3.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">Основное LED-освещение по периметру</h2>
+
+                        <p class="category-good-card__description">
+                            Основная LED-подсветка по периметру, обеспечивает полноценное освещение в вечернее время.
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/4.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">Основное LED-освещение по периметру</h2>
+
+                        <p class="category-good-card__description">
+                            Светодиодная декоративная RGB подсветка, с цветовым спектром от синего к красному.
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/5.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">LED-подсветка в ламелях</h2>
+
+                        <p class="category-good-card__description">
+                            Создает яркое освещение по всему периметру перголы
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="category-good-main">Led-подсветка маркиз</h2>
+
+            <div class="category-good-cards mb-0">
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/6.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">LED-освещение в лоткях маркизы</h2>
+
+                        <p class="category-good-card__description">
+                            Локти Concept LED оснащаются LED-подсветкой.
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/7.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">LED-подсветка короба маркизы</h2>
+
+                        <p class="category-good-card__description">
+                            В короб маркизы возможна установка LED-подсветки для комфортного освещения.
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-padding pb-0 section additional-options">
+                <div class="single-banner orange-bg">
+                    <img src="img/additional-options/3.png" alt="" class="single-banner__img single-banner__img_smart-home">
+
+                    <div class="single-banner__content">
+                        <h3 class="single-banner__title">Умный дом</h3>
+
+                        <p class="single-banner__text">
+                            Данный вид автоматики интегрируется с умным домом
+                        </p>
+
+                        <a href="#" class="default-button default-button_white single-banner__btn">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-container" id="heating" data-navigation="heating">
+            <h2 class="category-good-main">Обогрев</h2>
+
+            <p class="category-good-text">
+                Инфракрасные обогреватели - идеально подходят для обогрева площадок без боковых стен. В отличие от громоздких, пожароопасных тепловых пушек и калориферов, которые нагревают только воздух и быстро теряют тепло, ИК – лучи нагревают поверхности предметов, по типу естественного обогрева солнечными лучами. Помещение полностью прогревается в течении 5 минут и сохраняет тепло даже после отключения обогревателя. Тепловой поток может настраиваться на определенные предметы (столики, диваны, люди), что позволяет при необходимости регулировать направление тепла.
+            </p>
+
+            <div class="cloth-content-top">
+                <div class="cloth-content-top__logo">
+                    <img src="img/category-heating/8.jpg" alt="" class="cloth-content-top__img">
+                </div>
+
+                <p class="cloth-content-top__text">
+                    Устройство Somfy TaHoma. Дистанционный контроль и управление домом по вашему сценарию через интернет.
+                </p>
+            </div>
+
+            <div class="category-good-cards">
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/9.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">Пульт Patio 1k RTS</h2>
+
+                        <p class="category-good-card__description">
+                            <span>Описание:</span> <br> <br>
+                            HELIOSA 9 — уличный инфракрасный обогреватель. Корпус обогревателя выполнен из литого алюминия.
+                            <br>
+                            Коэффициент полезного действия этой модели насчитывает 90%. Благодаря преобразованию электроэнергии в теплоэнергию, объекты после нагревания начинают отдавать тепло, активируя принцип двойного прогревания. Индекс влагозащищенности прибора IPX5 (защита дождя и струй воды). Предназначен для обогрева площади до 24 кв.м. Доступен в белом, кремовом и антрацитовом цвете корпуса.
+                            <br><br>
+                            <span>Характеристики:</span> <br><br>
+                            - Производство: Италия; <br>
+                            - Мощность: 1500Вт; при напряжении: 220В <br>
+                            - Срок службы: до 7000 часов <br>
+                            - Рекомендуемая высота установки: максимум 2.50-2.70 м <br>
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cloth-content-top">
+                <div class="cloth-content-top__logo">
+                    <img src="img/category-heating/10.jpg" alt="" class="cloth-content-top__img">
+                </div>
+
+                <p class="cloth-content-top__text">
+                    VARMA TEC линия профессиональных инфракрасных обогревателей
+                </p>
+            </div>
+
+            <div class="category-good-cards mb-0">
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/11.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">Varma IPX5  2 КВт</h2>
+
+                        <p class="category-good-card__description">
+                            <span>Описание:</span> <br> <br>
+                            Коэффициент полезного действия этой модели насчитывает 90%. Благодаря преобразованию электроэнергии в теплоэнергию, объекты после нагревания начинают отдавать тепло, активируя принцип двойного прогревания. Индекс влагозащищенности прибора IPX5 (защита дождя и струй воды). Предназначен для обогрева площади до 24 кв.м. Доступен в белом, кремовом и антрацитовом цвете корпуса.
+                            <span>Характеристики</span> <br> <br>
+                            - Производство: Италия; <br>
+                            - Мощность: 1500Вт; при напряжении: 220В <br>
+                            - Срок службы: до 7000 часов <br>
+                            - Рекомендуемая высота установки: максимум 2.50-2.70 м <br>
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <p class="category-good-card__price">
+                                от 230€
+                            </p>
+
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-good-card">
+                    <div class="category-good-card__img-container">
+                        <img src="img/category-heating/12.jpg" alt="" class="category-good-card__img">
+                    </div>
+
+                    <div class="category-good-card__content">
+                        <h2 class="category-good-card__title">Varma IPX5  1,5 КВт</h2>
+
+                        <p class="category-good-card__description">
+                            <span>Описание:</span> <br> <br>
+                            Коэффициент полезного действия этой модели насчитывает 90%. Благодаря преобразованию электроэнергии в теплоэнергию, объекты после нагревания начинают отдавать тепло, активируя принцип двойного прогревания. Индекс влагозащищенности прибора IPX5 (защита дождя и струй воды). Предназначен для обогрева площади до 24 кв.м. Доступен в белом, кремовом и антрацитовом цвете корпуса.
+                            <br><br>
+                            <span>Характеристики</span>
+                            - Производство: Италия; <br>
+                            - Мощность: 1500Вт; при напряжении: 220В <br>
+                            - Срок службы: до 7000 часов <br>
+                            - Рекомендуемая высота установки: максимум 2.50-2.70 м
+                        </p>
+
+                        <div class="category-good-card__bottom">
+                            <p class="category-good-card__price">
+                                от 230€
+                            </p>
+
+                            <button class="default-button category-good-card__btn modal-btn" data-modal="#namePhoneModal">
+                                Узнать наличие и цены
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-specifications section-padding pb-0">
+                <h2 class="category-good-main">Технические характеристики</h2>
+
+                <ul class="tech-specifications__list">
+                    <li class="tech-specifications__item">
+                        <span>
+                                Индекс защищенности
+                        </span>
+                        <span>
+                                IPX5
+                         </span>
+                    </li>
+
+                    <li class="tech-specifications__item">
+                            <span>
+                                Влагозащищенная модель
+                            </span>
+                        <span>
+                                защита от дождя и струй воды
+                            </span>
+                    </li>
+
+                    <li class="tech-specifications__item">
+                            <span>
+                                Площадь обогрева
+                            </span>
+                        <span>
+                                12-24 м2
+                            </span>
+                    </li>
+
+                    <li class="tech-specifications__item">
+                            <span>
+                                Рекомендуемая высота установки
+                            </span>
+                        <span>
+                                 максимум 2.50-2.70 м
+                            </span>
+                    </li>
+
+                    <li class="tech-specifications__item">
+                            <span>
+                                Срок службы
+                            </span>
+                        <span>
+                                до 7000 часов
+                            </span>
+                    </li>
+
+                    <li class="tech-specifications__item">
+                           <span>
+                                Страна производства
+                            </span>
+                        <span>
+                                Италия
+                            </span>
+                    </li>
+                </ul>
+
+                <div class="tech-specifications__colors">
+                    <h3 class="tech-specifications__colors__title">
+                        Цвета
+                    </h3>
+                    <div class="tech-specifications__colors__card">
+                        <img src="img/category-heating/13.jpg" alt="" class="tech-specifications__colors__img">
+                        <p class="tech-specifications__colors__text">
+                            RAL 7028 <br>
+                            (антрацит)
+                        </p>
+                    </div>
+                    <div class="tech-specifications__colors__card">
+                        <img src="img/category-heating/14.jpg" alt="" class="tech-specifications__colors__img">
+                        <p class="tech-specifications__colors__text">
+                            RAL 1013 <br>
+                            (кремовый)
+                        </p>
+                    </div>
+                    <div class="tech-specifications__colors__card">
+                        <img src="img/category-heating/15.jpg" alt="" class="tech-specifications__colors__img">
+                        <p class="tech-specifications__colors__text">
+                            RAL 9016 <br>
+                            (муар белый)
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="category-good-main">Зона обогрева</h2>
+
+                <div class="tech-specifications__list__zones-container">
+                    <ul class="tech-specifications__list tech-specifications__list_zones">
+                        <li class="tech-specifications__list_zones__item-title">
+                            Зона обогрева*
+                        </li>
+                        <li class="tech-specifications__list_zones__item-top">
+                        <span>
+                            Модель
+                        </span>
+                            <span>
+                            H
+                        </span>
+                            <span>
+                            W
+                        </span>
+                            <span>
+                            P
+                        </span>
+                            <span>
+                            S<i>(площадь)</i>
+                        </span>
+                        </li>
+                        <li class="tech-specifications__list_zones__item">
+                        <span>
+                            Varma IPX5  1,5 КВт
+                        </span>
+                            <span>
+                           2,5 м
+                        </span>
+                            <span>
+                            4 м
+                        </span>
+                            <span>
+                            3 м
+                        </span>
+                            <span>
+                            12 м²
+                        </span>
+                        </li>
+                        <li class="tech-specifications__list_zones__item">
+                        <span>
+                            Varma IPX5  2 КВт
+                        </span>
+                            <span>
+                           2,5 м
+                        </span>
+                            <span>
+                            4 м
+                        </span>
+                            <span>
+                            3 м
+                        </span>
+                            <span>
+                            16 м²
+                        </span>
+                        </li>
+                        <li class="tech-specifications__list_zones__item">
+                        <span>
+                            HELIOSA 9
+                        </span>
+                            <span>
+                           2,7 м
+                        </span>
+                            <span>
+                            4 м
+                        </span>
+                            <span>
+                            3 м
+                        </span>
+                            <span>
+                            24 м²
+                        </span>
+                        </li>
+                        <li class="tech-specifications__list_zones__item-bottom">
+                            *Тест проведен снаружи помещения при температуре окружающей
+                            среды 8℃ в отсутствии потоков воздуха
+                        </li>
+                    </ul>
+
+                    <img src="img/category-heating/16.jpg" alt="" class="tech-specifications__list_zones__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section who-we orange-padding section_who-we position-relative">
+    <div class="container container_who-we">
+
+        <h2 class="default-section-title default-section-title_white">Почему мы ?</h2>
+
+        <div class="who-we__content ">
+            <div class="who-we__numbers">
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">12</div>
+                    <p class="who-we__numbers__item__text">
+                        Предоставляем гарантию на всю продукцию и все виды работ от 12 месяцев
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">5</div>
+                    <p class="who-we__numbers__item__text">
+                        Приводите друзей, обращайтесь повторно и получайте от 5% скидки
+                    </p>
+                </div>
+
+                <div class="who-we__numbers__item">
+                    <div class="who-we__numbers__item__number">10</div>
+                    <p class="who-we__numbers__item__text">
+                        Десятилетний отпыт работы. Индивидуальный подход
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="name-phone-form">
+            <div class="name-phone-form__left">
+                <h3 class="name-phone-form__title">Получите консультацию</h3>
+                <p class="name-phone-form__text">Оставьте нам свой номер и мы вам перезвоним</p>
+            </div>
+
+            <div class="name-phone-form__inputs">
+                <div class="position-relative error">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="Ваше имя">
+                </div>
+
+                <div class="position-relative">
+                    <p class="input-error">Ошибка! Заполните поле</p>
+                    <img src="img/svg/error-cross.svg" alt="" class="error-cross">
+                    <input type="text" class="name-phone-form__input" placeholder="+7 ___  ___ __ __">
+                </div>
+
+                <input type="submit" class="name-phone-form__submit default-button" value="Заказать звонок">
+            </div>
+        </form>
+    </div>
+    <img src="img/category-automatic-control/31.jpg" alt="" class="who-we-img">
+</section>
+
+<section class="portfolio-preview section section-padding">
+    <div class="container container_portfolio-preview">
+        <h2 class="default-section-title">Портфолио</h2>
+
+        <div class="portfolio-preview__cards">
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/1.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/2.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/3.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/4.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/5.jpg) no-repeat center center / cover"></div>
+            </a>
+            <a href="#" class="portfolio-preview__card">
+                <div class="portfolio-preview__background" style="background: url(img/portfolio-view/6.jpg) no-repeat center center / cover"></div>
+            </a>
+        </div>
+
+        <a href="#" class="show-more default-button">
+            Больше работ
+        </a>
+    </div>
+</section>
+
+<section class="last-news pt-0 section section-padding">
+    <div class="container container_last-news">
+        <h2 class="default-section-title">Последние новости</h2>
+
+        <div class="last-news__slider slider-3-2-1">
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+
+            <div class="last-news__item">
+                <div class="last-news__text">
+                    Пристенная пергола (на фото 📸) для веранды загородного дома 🏡. <br><br>
+                    ℹ️ℹ️ℹ️<br><br>
+                    📌Размеры: ширина 4,30 м, вынос 6 м. <br><br>
+                    📌Цвет: алюминиевый темного цвета «антрацит». <br>
+                    <div class="last-news__mask"></div>
+                </div>
+                <a href="#" class="last-news__btn">
+                    Читать полностью
+                </a>
+            </div>
+        </div>
+
+        <a href="" class="show-more default-button show-more_last-news">
+            Больше новостей
+        </a>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
