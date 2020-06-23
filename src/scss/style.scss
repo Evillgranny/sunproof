@@ -4873,3 +4873,18 @@ html, body {
     margin-top: 60px;
   }
 }
+
+.subcategory-marquises {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/subcategory-marquises/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
