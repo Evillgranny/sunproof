@@ -1371,6 +1371,16 @@ html, body {
       height: 160px;
     }
 
+    &_order {
+      margin-left: auto;
+      margin-right: auto;
+      @media screen and (max-width: 575px) {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
     &_footer {
       margin-left: auto;
       margin-right: auto;
@@ -3467,6 +3477,29 @@ html, body {
 
 .pergolas-steps {
 
+  &__btn {
+    border-radius: 40px;
+    background: $clearWhite;
+    width: 280px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 23px;
+    color: $secondTextColor;
+    margin-top: 12px;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 0;
+      height: 40px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -4886,5 +4919,327 @@ html, body {
   @media screen and (max-width: 575px) {
     height: 140px;
     margin-top: 60px;
+  }
+}
+
+.card-lamellar-pergolas {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-lamellar-pergolas/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.lamella-pergola-design {
+  &__cards {
+    display: flex;
+    width: calc(100% + 30px);
+    margin-left: -30px;
+
+    @media screen and (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 575px) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__card {
+    background: #fff;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    margin-left: 30px;
+    height: 440px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      width: calc(50% - 30px);
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+
+    a {
+      text-decoration: none;
+      color: $secondTextColorHover;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.lamellar-slider {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+
+  @media screen and (max-width: 575px) {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slick-slide {
+    padding: 4px 15px 4px 15px;
+  }
+
+  &__card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 510px;
+
+    @media screen and (max-width: 991px) {
+      height: 424px;
+    }
+    @media screen and (max-width: 575px) {
+      height: auto;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__title {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 8px;
+      margin-top: 12px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 8px;
+      margin-top: 12px;
+    }
+  }
+}
+
+.lamellar-whom-cards {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 30px);
+  margin-left: -30px;
+
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 575px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  &__card {
+    margin-left: 30px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 991px) {
+      width: calc(50% - 30px);
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $secondTextColor;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.orange-lists-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 575px) {
+    flex-direction: column;
+    justify-content: normal;
+  }
+}
+
+.orange-list {
+  width: calc(50% - 15px);
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+
+  &__item {
+    font-size: 24px;
+    line-height: 29px;
+    color: $clearWhite;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.order-measurement {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+    width: calc(50% - 15px);
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__form {
+    width: calc(50% - 15px);
+    background: url(../img/card-lamellar-pergolas/17.jpg) no-repeat 50% / cover;
+    border-radius: 10px;
+    height: 340px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      width: auto;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      height: 300px;
+    }
+
+    &__text {
+      max-width: 390px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin: 40px auto 30px auto;
+      color: $clearWhite;
+
+      @media screen and (max-width: 575px) {
+        font-size: 16px;
+        line-height: 19px;
+        width: 240px;
+        margin: 26px auto 30px auto;
+      }
+    }
   }
 }
