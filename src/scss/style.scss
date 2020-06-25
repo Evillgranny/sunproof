@@ -705,6 +705,10 @@ html, body {
     margin-bottom: 30px;
   }
 
+  &_black-bg {
+    color: $blackBgWhiteColor;
+  }
+
   &_white {
     color: $clearWhite;
   }
@@ -1708,6 +1712,10 @@ html, body {
   background: $orangeBg;
 }
 
+.black-bg {
+  background: $blackBg;
+}
+
 .additional-options {
   padding-bottom: 90px;
   @media screen and (max-width: 991px){
@@ -1732,7 +1740,7 @@ html, body {
     border-radius: 10px;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
       height: 300px;
       width: 100%;
       display: flex;
@@ -1743,6 +1751,10 @@ html, body {
     @media screen and (max-width: 575px) {
       height: 230px;
       padding:  20px 10px;
+    }
+
+    &_black-bg {
+      background: $blackBgCard;
     }
 
     &__img {
@@ -1768,6 +1780,10 @@ html, body {
         line-height: 19px;
         margin-bottom: 6px;
       }
+
+      &_black-bg {
+        color: $blackBgWhiteColor;
+      }
     }
 
     &__description {
@@ -1777,6 +1793,10 @@ html, body {
       @media screen and (max-width: 575px) {
         font-size: 10px;
         line-height: 12px;
+      }
+
+      &_black-bg {
+        color: $blackBgWhiteColor;
       }
     }
 
@@ -2362,6 +2382,10 @@ html, body {
       border: 2px solid $clearWhite;
        width: 24px;
        height: 24px;
+    }
+
+    &_black-bg {
+      background: $dirtyWhite;
     }
   }
 }
@@ -3479,7 +3503,6 @@ html, body {
 
   &__btn {
     border-radius: 40px;
-    background: $clearWhite;
     width: 280px;
     height: 48px;
     display: flex;
@@ -3487,7 +3510,6 @@ html, body {
     justify-content: center;
     font-size: 20px;
     line-height: 23px;
-    color: $secondTextColor;
     margin-top: 12px;
 
     @media screen and (max-width: 991px) {
@@ -3550,6 +3572,11 @@ html, body {
       min-width: 40px;
       margin-right: 12px;
     }
+
+    &_reverse-color {
+      background: #ff630b;;
+      color: $clearWhite;
+    }
   }
 
   &__text {
@@ -3565,6 +3592,10 @@ html, body {
     @media screen and (max-width: 575px) {
       font-size: 12px;
       line-height: 15px;
+    }
+
+    &_reverse-color {
+      color: $textColor;
     }
   }
 }
@@ -4252,6 +4283,10 @@ html, body {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  &_black-bg {
+    color: $clearWhite;
+  }
 }
 
 .category-good-text {
@@ -4295,12 +4330,39 @@ html, body {
   @media screen and (max-width: 991px) {
     flex-direction: column;
     width: calc(50% - 15px);
+    justify-content: normal;
   }
 
   @media screen and (max-width: 575px) {
     width: 100%;
   }
 
+  &_black-bg {
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__main-container {
+    width: calc(50% - 15px);
+    font-size: 48px;
+    line-height: 58px;
+    color: $clearWhite;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 48px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 
   &__img-container {
     width: calc(50% - 15px);
@@ -4342,6 +4404,10 @@ html, body {
       line-height: 24px;
       margin-bottom: 8px;
     }
+
+    &_black-bg {
+      color: $blackBgWhiteColor;
+    }
   }
 
   &__description {
@@ -4350,11 +4416,16 @@ html, body {
     color: $textColor;
     margin-bottom: 20px;
 
+    @media screen and (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+
     span {
       font-weight: 500;
     }
-    @media screen and (max-width: 991px) {
-      margin-bottom: 10px;
+
+    &_black-bg {
+      color: $blackBgWhiteColor;
     }
   }
 
@@ -4403,6 +4474,17 @@ html, body {
       flex-direction: column;
       margin-top: 30px;
     }
+
+    &_black-bg {
+      @media screen and (max-width: 991px) {
+        flex-direction: row;
+        align-items: center;
+      }
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        margin-top: 30px;
+      }
+    }
   }
 
   &__price {
@@ -4414,6 +4496,20 @@ html, body {
     @media screen and (max-width: 991px) {
       margin-right: 0;
       margin-bottom: 10px;
+    }
+
+    &_black-bg {
+      color: $blackBgWhiteColor;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0;
+        margin-right: 30px;
+      }
+
+      @media screen and (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -4973,6 +5069,12 @@ html, body {
       height: auto;
       padding-bottom: 20px;
     }
+
+    &_black-bg {
+      background: transparent;
+      height: auto;
+      padding-bottom: 20px;
+    }
   }
 
   &__img {
@@ -5205,6 +5307,10 @@ html, body {
       font-size: 12px;
       line-height: 15px;
     }
+
+    &_black-bg {
+      color: $blackBgWhiteColor;
+    }
   }
 
   &__form {
@@ -5241,5 +5347,21 @@ html, body {
         margin: 26px auto 30px auto;
       }
     }
+  }
+}
+
+.card-premium-pergolas {
+  height: 760px;
+  margin-top: 140px;
+  background: url(../img/card-premium-pergolas/1.jpg) no-repeat 50%/cover;
+  overflow: hidden;
+
+  @media screen and (max-width: 991px) {
+    height: 580px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 340px;
+    margin-top: 60px;
   }
 }

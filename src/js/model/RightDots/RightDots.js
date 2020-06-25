@@ -1,19 +1,23 @@
 import $ from 'jquery'
 
 class RightDots {
-    constructor(dotsContainer, sections, dotClass) {
+    constructor(dotsContainer, sections, dotClass, blackBg, blackBgClass) {
         this.dotsContainer = dotsContainer
         this.sections = sections
         this.dotClass = dotClass
         this.dotsArray = []
         this.sectionsArray = Array.prototype.slice.call(this.sections)
         this.max =  this.sectionsArray.length -1
+        this.blackBg = blackBg
+        this.blackBgClass = blackBgClass
     }
 
     dotsToDOM () {
         this.sections.forEach((i, index) => {
             let dot = document.createElement('div')
             dot.classList.add(this.dotClass)
+
+            this.blackBg.length > 0 && dot.classList.add(this.blackBgClass)
 
             index === 0 ? dot.classList.add('active') : false
 
