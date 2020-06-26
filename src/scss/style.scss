@@ -1649,6 +1649,8 @@ html, body {
   margin-bottom: 52px;
   display: inline-flex;
   border-bottom: 1px solid $borderColor;
+  overflow-x: auto;
+  width: 100%;
 
   @media screen and (max-width: 991px) {
     margin-bottom: 48px;
@@ -1674,6 +1676,7 @@ html, body {
     margin-right: 10px;
     margin-bottom: -1px;
     border-bottom: 3px solid transparent;
+    white-space: nowrap;
 
     @media screen and (max-width: 575px) {
       font-size: 12px;
@@ -4647,6 +4650,60 @@ html, body {
 
 .tech-specifications {
 
+  &__photos {
+    display: flex;
+    width: calc(100% + 30px);
+    margin-left: -30px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+    @media screen and (max-width: 991px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__photos-card {
+    width: calc(33.33% - 30px);
+    margin-left: 30px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 991px) {
+      width: calc(50% - 30px);
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__photos-img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &__photos-text {
+    font-size: 20px;
+    line-height: 24px;
+    color: $secondTextColorHover;
+    margin-top: 20px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-top: 10px;
+    }
+  }
+
   &__colors {
     display: flex;
     flex-wrap: wrap;
@@ -4949,7 +5006,7 @@ html, body {
     }
 
     span:last-child {
-      padding: 18px 18px 0 18px;
+      padding: 18px 0 18px 18px;
       display: flex;
       align-content: center;
       color: $secondTextColor;
@@ -4959,7 +5016,7 @@ html, body {
       @media screen and (max-width: 575px) {
         font-size: 12px;
         line-height: 15px;
-        padding: 10px 10px 0 10px;
+        padding: 10px 0 10px  10px;
       }
     }
   }
@@ -5363,5 +5420,75 @@ html, body {
   @media screen and (max-width: 575px) {
     height: 340px;
     margin-top: 60px;
+  }
+}
+
+.card-sliding-awning {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-sliding-awning/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.structural-element {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: calc(50% - 15px);
+    align-self: flex-start;
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    width: calc(50% - 15px);
+
+    @media screen and (max-width: 575px) {
+      width: 100%;
+    }
+    .structural-element__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: $textColor;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__number {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    margin-right: 20px;
+    color: $secondTextColorHover;
   }
 }
