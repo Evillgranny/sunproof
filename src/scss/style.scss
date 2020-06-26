@@ -1650,7 +1650,7 @@ html, body {
   display: inline-flex;
   border-bottom: 1px solid $borderColor;
   overflow-x: auto;
-  width: 100%;
+  max-width: 100%;
 
   @media screen and (max-width: 991px) {
     margin-bottom: 48px;
@@ -1674,7 +1674,6 @@ html, body {
     padding: 0 0 7px 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: -1px;
     border-bottom: 3px solid transparent;
     white-space: nowrap;
 
