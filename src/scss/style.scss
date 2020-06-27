@@ -5491,3 +5491,60 @@ html, body {
     color: $secondTextColorHover;
   }
 }
+
+.card-semi-circular-marqises {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-semi-circular-marqises/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.tabs-text {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 80px;
+  color: $textColor;
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 575px) {
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  a {
+    color: $secondTextColorHover;
+    text-decoration: none;
+    &:hover {
+      color: $secondTextColorHover;
+      text-decoration: none;
+    }
+  }
+}
+
+.tabs-subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $secondTextColor;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 575px) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
