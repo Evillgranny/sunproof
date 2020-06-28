@@ -157,6 +157,17 @@ html, body {
   }
 }
 
+.default-text {
+  color: $textColor;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 .whopper {
   width: 60px;
   background: transparent;
@@ -5546,5 +5557,130 @@ html, body {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+.card-vertical-glazing {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-vertical-glazing/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.structural-elements {
+  display: flex;
+  width: calc(100% + 30px);
+  margin-left: -30px;
+
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 575px) {
+    width: calc(100% + 16px);
+    margin-left: -16px;
+  }
+
+  &__img {
+    width: calc(16.6% - 30px);
+    margin-left: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+      width: calc(33.33% - 30px);
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 575px) {
+      width: calc(33.33% - 16px);
+      margin-left: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.areas-of-application {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc(50% - 15px);
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 991px){
+      height: 320px;
+    }
+    @media screen and (max-width: 575px){
+      width: 100%;
+      height: 270px;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $clearWhite;
+    background: rgba(51,51,51,.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @media screen and (max-width: 575px){
+      padding-left: 12px;
+      padding-right: 12px;
+      min-height: 74px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.who-we2 {
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 575px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-wrap: wrap;
+      .who-we__numbers__item {
+        margin-bottom: 48px;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 30px;
+    }
   }
 }
