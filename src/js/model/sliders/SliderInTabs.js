@@ -10,7 +10,6 @@ class SliderInTabs {
         if ($(window).width() <= 991) {
             this.slider.forEach(i => {
                 let slidesArray = $(i).find(this.slideClass)
-
                 if (slidesArray.length > 1) {
                     if ($(i) && !$(i).hasClass('slick-initialized')) {
                         $(i).slick({

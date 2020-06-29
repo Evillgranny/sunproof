@@ -14,7 +14,7 @@ allTabs.forEach(i => {
         i.addEventListener('click', (event) => {
             allTabsF.tabClick(event, i)
             if ($(window).width() <= 991) {
-                sliderInTabsF = new SliderInTabs(sliderInTabsV, '.catalog-card')
+                sliderInTabsF = new SliderInTabs(sliderInTabsV, '.slider-0-2-1__slide')
                 sliderInTabsF.sliderInit()
             }
         })
