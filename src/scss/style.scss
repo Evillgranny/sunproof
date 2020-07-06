@@ -6255,6 +6255,7 @@ html, body {
     padding-right: 15px;
     display: flex !important;
     margin-bottom: 30px;
+    background: $white;
 
     @media screen and (max-width: 991px) {
       width: auto;
@@ -6369,5 +6370,77 @@ html, body {
   &__img {
     width: 100%;
 
+  }
+}
+
+.card-roller-grilles {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-roller-grilles/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.orange-color {
+  color: $secondTextColorHover;
+}
+
+.lattices {
+  display: flex;
+  gap: 30px;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: $textColor;
+
+
+    @media screen and (max-width: 575px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    span {
+      color: $secondTextColor;
+      font-weight: 500;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 181px;
+
+    @media screen and (max-width: 991px) {
+      width: calc(33.33% - 20px);
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 15px;
+      color: $secondTextColor;
+
+      span {
+        font-weight: 500;
+      }
+    }
   }
 }
