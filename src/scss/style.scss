@@ -5787,6 +5787,21 @@ html, body {
     font-size: 16px;
     line-height: 19px;
 
+    &_flex {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+
+      p {
+        width: 50%;
+      }
+    }
+
+    span {
+      font-weight: 500;
+    }
+
     @media screen and (max-width: 575px) {
       font-size: 12px;
       line-height: 15px;
@@ -6457,5 +6472,63 @@ html, body {
   @media screen and (max-width: 575px) {
     height: 140px;
     margin-top: 60px;
+  }
+}
+
+.card-soft-windows-for-cafes-and-restaurants {
+  height: 520px;
+  margin-top: 140px;
+  background: url(../img/card-soft-windows-for-cafes-and-restaurants/1.jpg) no-repeat 50%/cover;
+
+  @media screen and (max-width: 991px) {
+    height: 300px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 575px) {
+    height: 140px;
+    margin-top: 60px;
+  }
+}
+
+.colors-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 991px) {
+    gap: 20px
+  }
+
+  &__item {
+    width: 132px;
+
+    @media screen and (max-width: 575px) {
+      width: 53px;
+    }
+  }
+
+  &__img {
+    border: 2px solid #EFEFEF;
+    width: 100%;
+    height: 50px;
+
+    @media screen and (max-width: 575px) {
+      height: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: $secondTextColor;
+    margin-top: 10px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 10px;
+      line-height: 12px;
+      margin-top: 5px;
+    }
   }
 }
