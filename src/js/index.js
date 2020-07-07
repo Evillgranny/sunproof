@@ -1,6 +1,8 @@
 import bootstrap from "bootstrap"
 import $ from "jquery"
+import jQuery from "jquery"
 import slick from "slick-carousel"
+import "@fancyapps/fancybox"
 
 // menu and catalog
 import { catalogF } from "./controller/catalog/catalogControl";
@@ -27,6 +29,9 @@ import { modals, popus } from "./controller/modalsC/modalsC";
 
 //rating
 import { ratingF } from "./controller/RatingC/RatingC";
+
+//copyLink
+import { copyF } from "./controller/copyLinkC/copyLinkC";
 
 
 

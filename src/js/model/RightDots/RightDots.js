@@ -25,7 +25,7 @@ class RightDots {
                 document.querySelector('.active' + '.' + this.dotClass).classList.remove('active')
                 dot.classList.add('active')
 
-                $('html').animate({ scrollTop: $(this.sections[index]).offset().top - 139 }, 500)
+                $('html').animate({ scrollTop: $(this.sections[index]).offset().top - 99 }, 500)
             }
 
             this.dotsArray.push(dot)
@@ -37,7 +37,7 @@ class RightDots {
 
 
         window.onscroll = () => {
-            let currentIndex = this.sectionsArray.findIndex((i, index) => i.getBoundingClientRect().top > 139)
+            let currentIndex = this.sectionsArray.findIndex((i, index) => i.getBoundingClientRect().top > 99)
             currentIndex === -1 ? currentIndex = this.max : false
             document.querySelector('.active' + '.' + this.dotClass).classList.remove('active')
             this.dotsArray[currentIndex].classList.add('active')

@@ -4,7 +4,7 @@
 @import 'vars';
 @import "fonts";
 @import "mixins";
-
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
 
 html, body {
   font-family: $inter;
@@ -25,16 +25,13 @@ html, body {
 
 .header {
   background: rgba(255,255,255,.9);
-  height: 80px;
+  height: 60px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
-  @media screen and (max-width: 575px) {
-    height: 60px;
-  }
 
   &__logo {
     @media screen and (max-width: 991px) {
@@ -91,13 +88,13 @@ html, body {
 
   &__menu {
     background: rgba(248, 248, 248, .8);
-    height: 60px;
+    height: 40px;
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
     @media screen and (max-width: 991px) {
       background: $clearWhite;
       height: 100%;
       position: fixed;
-      top: 80px;
+      top: 60px;
       left: 0;
       width: 100%;
       overflow-y: auto;
@@ -302,7 +299,7 @@ html, body {
         transition: .3s;
         display: block;
         position: absolute;
-        top: 50%;
+        top: 45%;
         right: 0;
         padding-left: 20px;
         @media screen and (max-width: 991px) {
@@ -336,8 +333,8 @@ html, body {
     }
 
     &__link {
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 18px;
+      line-height: 22px;
       color: $secondTextColor;
       transition: .3s;
       text-decoration: none;
@@ -357,10 +354,10 @@ html, body {
 
 .catalog-menu {
   position: fixed;
-  top: 140px;
+  top: 100px;
   width: 100%;
   left: 0;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 100px);
   overflow-y: auto;
   display: none;
   background: $popupBacground;
@@ -502,13 +499,11 @@ html, body {
   }
 }
 
-
-
 .main {
   overflow: hidden;
-  margin-top: 140px;
+  margin-top: 100px;
   @media screen and (max-width: 991px) {
-    margin-top: 20px;
+    margin-top: 0;
   }
   @media screen and (max-width: 575px) {
     margin-top: 0;
@@ -738,16 +733,10 @@ html, body {
   }
 }
 
-
-
 .section-padding {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
-  @media screen and (max-width: 991px) {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
   @media screen and (max-width: 575px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1683,8 +1672,8 @@ html, body {
     line-height: 23px;
     color: $placeholderColor;
     padding: 0 0 7px 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-bottom: 3px solid transparent;
     white-space: nowrap;
 
@@ -2025,7 +2014,6 @@ html, body {
 }
 
 .last-news {
-
 
   &_main-page {
     padding-top: 0;
@@ -2452,7 +2440,7 @@ html, body {
 }
 
 .bread {
-  margin-top: 160px;
+  margin-top: 120px;
 
   @media screen and (max-width: 991px) {
     margin-top: 100px;
@@ -2533,10 +2521,10 @@ html, body {
 
 .main-about {
   height: 520px;
-  margin-top: 140px;
+  margin-top: 100px;
   background: url(../img/about-main/1.jpg) no-repeat center center / cover;
   @media screen and (max-width: 991px) {
-    margin-top: 80px;
+    margin-top: 60px;
     height: 300px;
   }
   @media screen and (max-width: 575px) {
@@ -2565,7 +2553,8 @@ html, body {
   &__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    align-items: center;
     @media screen and (max-width: 991px) {
       margin-bottom: 48px;
     }
@@ -2583,17 +2572,17 @@ html, body {
     box-shadow: 0px 4px 8px rgba(198, 75, 7, 0.62);
     border-radius: 10px;
     font-weight: bold;
-    font-size: 150px;
-    line-height: 182px;
+    font-size: 100px;
+    line-height: 121px;
     text-align: center;
     color: $clearWhite;
-    width: 200px;
-    height: 200px;
-    min-width: 200px;
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 52px;
+    margin-right: 30px;
 
     @media screen and (max-width: 991px) {
       width: 180px;
@@ -2625,12 +2614,8 @@ html, body {
   }
 
   &__text {
-    font-size: 32px;
-    line-height: 39px;
-    @media screen and (max-width: 991px) {
-      font-size: 24px;
-      line-height: 29px;
-    }
+    font-size: 24px;
+    line-height: 29px;
     @media screen and (max-width: 575px) {
       font-size: 12px;
       line-height: 15px;
@@ -2693,18 +2678,12 @@ html, body {
   }
 
   &__item {
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 29px;
     color: $secondTextColorHover;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     position: relative;
-    padding-left: 25px;
-    @media screen and (max-width: 991px) {
-      font-size: 24px;
-      line-height: 20px;
-      margin-bottom: 15px;
-      padding-left: 20px;
-    }
+    padding-left: 20px;
 
     &::before {
       content: '';
@@ -2830,13 +2809,14 @@ html, body {
   }
 }
 
-
 .portfolio {
   padding-top: 52px;
 
   @media screen and (max-width: 991px) {
     padding-top: 0;
   }
+
+
 
 
   &__slider {
@@ -2846,6 +2826,55 @@ html, body {
       width: calc(100% - 30px);
       margin-left: auto;
       margin-right: auto;
+    }
+
+    &__shared-link {
+      position: relative;
+
+      &:hover {
+        .portfolio__slider__shared-content {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+
+    &__shared-content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 10px;
+      border-radius: 10px;
+      background: $white;
+      box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.2);
+      opacity: 0;
+      pointer-events: none;
+      transition: .5s;
+    }
+
+    &__shared-content-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__copy-link {
+      margin-top: 10px;
+      cursor: pointer;
+      transition: .5s;
+
+      &.active {
+        color: $secondTextColorHover;
+      }
+    }
+
+    &__links-container {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      width: 85px;
+      flex-wrap: wrap;
+      margin-left: 57px;
     }
 
     &__bottom {
@@ -3467,51 +3496,6 @@ html, body {
   }
 }
 
-.category {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-pergolas/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-
-  &_glazing {
-    height: 520px;
-    margin-top: 140px;
-    background: url(../img/glazing/1.jpg) no-repeat 50%/cover;
-
-    @media screen and (max-width: 991px) {
-      height: 300px;
-      margin-top: 80px;
-    }
-    @media screen and (max-width: 575px) {
-      height: 140px;
-      margin-top: 60px;
-    }
-  }
-
-  &_marquises {
-    height: 520px;
-    margin-top: 140px;
-    background: url(../img/category-marquises/1.jpg) no-repeat 50%/cover;
-
-    @media screen and (max-width: 991px) {
-      height: 300px;
-      margin-top: 80px;
-    }
-    @media screen and (max-width: 575px) {
-      height: 140px;
-      margin-top: 60px;
-    }
-  }
-}
-
 .pergolas-steps {
 
   &__btn {
@@ -4123,6 +4107,11 @@ html, body {
     width: 160px;
     margin-left: 30px;
     margin-bottom: 40px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     @media screen and (max-width: 575px) {
       width: 118px;
@@ -4145,6 +4134,7 @@ html, body {
       line-height: 19px;
       text-align: center;
       margin-top: 10px;
+      color: $textColor;
 
       @media screen and (max-width: 575px) {
         margin-top: 12px;
@@ -4152,111 +4142,6 @@ html, body {
         line-height: 12px;
       }
     }
-  }
-}
-
-.category_window-blind {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/window-blind/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_curtains {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-curtains/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_anti-mosquito-nets {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-anti-mosquito-nets/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_cases {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-cases/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_roller-shutter-systems {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-roller-shutter-systems/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_terrace-board {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-terrace-board/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category_automatic-control {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-automatic-control/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -4625,36 +4510,6 @@ html, body {
       font-size: 16px;
       line-height: 19px;
     }
-  }
-}
-
-.category-smart-home {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-smart-home/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.category-heating {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-heating/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -5032,71 +4887,11 @@ html, body {
   }
 }
 
-.category-printing-on-fabrics {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/category-printing-on-fabrics/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
 .article {
 
   &__img {
     max-width: 100%;
     height: auto;
-  }
-}
-
-.subcategory-basket-marquises {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/subcategory-basket-marquises/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.subcategory-marquises {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/subcategory-marquises/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.card-lamellar-pergolas {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-lamellar-pergolas/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -5121,7 +4916,6 @@ html, body {
     width: calc(33.33% - 20px);
     margin-left: 30px;
     height: 440px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
     @media screen and (max-width: 991px) {
@@ -5146,6 +4940,7 @@ html, body {
 
   &__img {
     width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   &__text {
@@ -5419,31 +5214,16 @@ html, body {
 
 .card-premium-pergolas {
   height: 760px;
-  margin-top: 140px;
+  margin-top: 100px;
   background: url(../img/card-premium-pergolas/1.jpg) no-repeat 50%/cover;
   overflow: hidden;
 
   @media screen and (max-width: 991px) {
     height: 580px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   @media screen and (max-width: 575px) {
     height: 340px;
-    margin-top: 60px;
-  }
-}
-
-.card-sliding-awning {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-sliding-awning/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
     margin-top: 60px;
   }
 }
@@ -5503,21 +5283,6 @@ html, body {
   }
 }
 
-.card-semi-circular-marqises {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-semi-circular-marqises/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
 .tabs-text {
   font-size: 20px;
   line-height: 24px;
@@ -5557,21 +5322,6 @@ html, body {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 19px;
-  }
-}
-
-.card-vertical-glazing {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-vertical-glazing/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -5685,21 +5435,6 @@ html, body {
   }
 }
 
-.card-horizontal-wooden-blinds {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-horizontal-wooden-blinds/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
 .tabs-color-img-container {
   display: flex;
   justify-content: space-between;
@@ -5719,21 +5454,6 @@ html, body {
         margin-bottom: 20px;
       }
     }
-  }
-}
-
-.card-metal-roller-shutters {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-metal-roller-shutters/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -5976,8 +5696,6 @@ html, body {
 }
 
 .box-slider {
-  width: calc(100% + 30px);
-  margin-left: -30px;
   display: flex;
   justify-content: space-between;
 
@@ -6460,36 +6178,6 @@ html, body {
   }
 }
 
-.card-roller-garage-doors {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-roller-garage-doors/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
-.card-soft-windows-for-cafes-and-restaurants {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-soft-windows-for-cafes-and-restaurants/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
-  }
-}
-
 .colors-row {
   display: flex;
   flex-wrap: wrap;
@@ -6530,21 +6218,6 @@ html, body {
       line-height: 12px;
       margin-top: 5px;
     }
-  }
-}
-
-.card-sliding-mosquito-net {
-  height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-sliding-mosquito-net/1.jpg) no-repeat 50%/cover;
-
-  @media screen and (max-width: 991px) {
-    height: 300px;
-    margin-top: 80px;
-  }
-  @media screen and (max-width: 575px) {
-    height: 140px;
-    margin-top: 60px;
   }
 }
 
@@ -6643,6 +6316,7 @@ html, body {
 
     @media screen and (max-width: 991px) {
       width: auto;
+      min-width: auto;
       min-height: auto;
     }
     @media screen and (max-width: 575px) {
@@ -6670,6 +6344,14 @@ html, body {
 }
 
 .card {
+
+  &__item-img {
+    height: auto;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
 
   &__cards {
     display: flex;
@@ -6793,17 +6475,158 @@ html, body {
   }
 }
 
-.card-blind {
+.main-price {
+  background: rgba(51, 51, 51, 0.34);
+  backdrop-filter: blur(10px);
+  width: 850px;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @media screen and (max-width: 991px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: auto;
+    height: 60px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 12px;
+    line-height: 15px;
+    height: 32px;
+  }
+}
+
+.category-main {
   height: 520px;
-  margin-top: 140px;
-  background: url(../img/card-blind/1.jpg) no-repeat 50%/cover;
+  margin-top: 100px;
 
   @media screen and (max-width: 991px) {
     height: 300px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   @media screen and (max-width: 575px) {
     height: 140px;
     margin-top: 60px;
+  }
+
+  &_blind {
+    background: url(../img/card-blind/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_cases {
+    background: url(../img/card-cases/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_horizontal-wooden-blinds {
+    background: url(../img/card-horizontal-wooden-blinds/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_lamellar-pergolas {
+    background: url(../img/card-lamellar-pergolas/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_metal-roller-shutters {
+    background: url(../img/card-metal-roller-shutters/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_roller-garage-doors {
+    background: url(../img/card-roller-garage-doors/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_roller-grilles {
+    background: url(../img/card-roller-grilles/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_semi-circular-marqises {
+    background: url(../img/card-semi-circular-marqises/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_sliding-awning {
+    background: url(../img/card-sliding-awning/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_sliding-mosquito-net {
+    background: url(../img/card-sliding-mosquito-net/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_soft-windows-for-cafes-and-restaurants {
+    background: url(../img/card-soft-windows-for-cafes-and-restaurants/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_card-transparent-roller-shutters {
+    background: url(../img/card-transparent-roller-shutters/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_vertical-glazing {
+    background: url(../img/card-vertical-glazing/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_anti-mosquito-nets {
+    background: url(../img/category-anti-mosquito-nets/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_automatic-control {
+    background: url(../img/category-automatic-control/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_cat-cases {
+    background: url(../img/category-cases/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_curtains {
+    background: url(../img/category-curtains/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_heating {
+    background: url(../img/category-heating/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_marquises {
+    background: url(../img/category-marquises/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_pergolas {
+    background: url(../img/category-pergolas/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_printing-on-fabrics {
+    background: url(../img/category-printing-on-fabrics/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_roller-shutter-systems {
+    background: url(../img/category-roller-shutter-systems/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_smart-home {
+    background: url(../img/category-smart-home/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_terrace-board {
+    background: url(../img/category-terrace-board/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_window-blind {
+    background: url(../img/window-blind/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_glazing {
+    background: url(../img/glazing/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_basket-marquises {
+    background: url(../img/subcategory-basket-marquises/1.jpg) no-repeat 50%/cover;
+  }
+
+  &_sub-marquises {
+    background: url(../img/subcategory-marquises/1.jpg) no-repeat 50%/cover;
   }
 }
