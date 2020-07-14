@@ -170,14 +170,13 @@ html, body {
   background: transparent;
   border: none;
   height: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
 
   @media screen and (max-width: 575px) {
     width: 36px;
     height: 21px;
   }
+
   &__span {
     background: $whopperColor;
     display: block;
@@ -192,8 +191,18 @@ html, body {
     &_1 {
       transform-origin: top left;
     }
+    &_2 {
+      margin-top: 10px;
+      @media screen and (max-width: 575px) {
+        margin-top: 6px;
+      }
+    }
     &_3 {
       transform-origin: bottom left;
+      margin-top: 10px;
+      @media screen and (max-width: 575px) {
+        margin-top: 6px;
+      }
     }
   }
 
@@ -220,8 +229,10 @@ html, body {
     .whopper__span_3{
       width: 57px;
       transform: rotate(-45deg);
+      margin-top: 20px;
       @media screen and (max-width: 575px) {
         width: 34px;
+        margin-top: 11px;
       }
     }
   }
@@ -895,6 +906,9 @@ html, body {
 
     @media screen and (max-width: 575px) {
       min-height: 140px;
+      padding: 5px 12px;
+      height: auto;
+      max-height: 100%;
     }
 
     &_cloth {
