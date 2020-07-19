@@ -390,9 +390,9 @@ title: "Sunproof | Маркиза для кафе и ресторанов"
                 </div>
             </div>
 
-            <a href="#" class="show-more default-button">
+            <button class="show-more default-button modal-btn" data-modal="#clothColor0">
                 Подбор ткани онлайн
-            </a>
+            </button>
         </div>
 
         <div class="tabs-container" id="fabricsForMarquisesAsIntended" data-navigation="fabrics-for-marquises">
@@ -583,9 +583,9 @@ title: "Sunproof | Маркиза для кафе и ресторанов"
                 </div>
             </div>
 
-            <a href="#" class="show-more default-button">
+            <button class="show-more default-button modal-btn" data-modal="#clothColor0">
                 Подбор ткани онлайн
-            </a>
+            </button>
         </div>
     </div>
 </section>
@@ -837,5 +837,11 @@ title: "Sunproof | Маркиза для кафе и ресторанов"
         </a>
     </div>
 </section>
+
+<div class="modal modal_cloth-online popup" id="clothColor0">
+    <div class="container modal_cloth-online__container">
+        <iframe src="https://www.sattler-global.com/design-selector-2016/#/product-list/314018/?iframe=true&lang=en" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
