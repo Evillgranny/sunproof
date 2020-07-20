@@ -23,6 +23,51 @@ html, body {
   overflow: hidden;
 }
 
+.default-button {
+  background: $defaultBtnColor;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  color: $clearWhite;
+  transition: .3s;
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: $hoverDefaultBtnColor;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+    text-decoration: none;
+    color: $clearWhite;
+  }
+
+  &:active {
+    background: $hoverDefaultBtnColor;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+  }
+
+  &_white {
+    background: $clearWhite;
+    color: $textColor;
+
+    &:hover {
+      background: $clearWhite;
+      color: $textColor;
+    }
+
+    &:active{
+      background: $clearWhite;
+      color: $textColor;
+      box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
 .header {
   background: rgba(255,255,255,.9);
   height: 60px;
@@ -84,6 +129,19 @@ html, body {
     width: 177px;
     height: 35px;
 
+    &_mobile {
+      width: 280px;
+      height: 48px;
+      font-size: 20px;
+      line-height: 23px;
+
+      @media screen and (max-width: 575px) {
+        width: 177px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
   }
 
   &__right-row {
@@ -107,6 +165,7 @@ html, body {
       overflow-x: hidden;
       display: none;
       padding-top: 20px;
+      padding-bottom: 100px;
     }
 
     @media screen and (max-width: 575px) {
@@ -115,50 +174,7 @@ html, body {
   }
 }
 
-.default-button {
-  background: $defaultBtnColor;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 19px;
-  color: $clearWhite;
-  transition: .3s;
-  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  &:hover {
-    background: $hoverDefaultBtnColor;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 40px;
-    text-decoration: none;
-    color: $clearWhite;
-  }
-
-  &:active {
-    background: $hoverDefaultBtnColor;
-    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 40px;
-  }
-
-  &_white {
-    background: $clearWhite;
-    color: $textColor;
-
-    &:hover {
-      background: $clearWhite;
-      color: $textColor;
-    }
-
-    &:active{
-      background: $clearWhite;
-      color: $textColor;
-      box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.08);
-    }
-  }
-}
 
 .default-text {
   color: $textColor;
@@ -245,9 +261,12 @@ html, body {
 }
 
 .navigation {
+  height: 100%;
+
   @media screen and (max-width: 991px) {
     width: 100%;
     overflow-x: hidden;
+    height: auto;
   }
 
   &__list {
@@ -260,6 +279,7 @@ html, body {
 
   &__item {
     display: flex;
+
     @media screen and (max-width: 991px) {
       height: auto !important;
       flex-direction: column;
@@ -270,6 +290,26 @@ html, body {
     }
     @media screen and (max-width: 575px) {
       margin-bottom: 20px;
+    }
+
+    &__img {
+      height: 44px;
+
+      @media screen and (max-width: 575px) {
+        height: 24px;
+      }
+    }
+
+
+    &_work-time {
+      font-size: 18px;
+      line-height: 22px;
+      color: $textColor;
+
+      @media screen and (max-width: 575px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     &:hover {
@@ -364,6 +404,17 @@ html, body {
       @media screen and (max-width: 575px) {
         font-size: 24px;
         line-height: 29px;
+      }
+
+      &_mobile-sub-menu {
+        font-size: 24px;
+        line-height: 29px;
+        color: $textColor;
+
+        @media screen and (max-width: 575px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
       }
     }
   }
@@ -645,6 +696,11 @@ html, body {
         top: 0;
         left: 0;
         position: absolute;
+
+        @media screen and (max-width: 575px) {
+          -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+        }
       }
     }
 
@@ -915,6 +971,8 @@ html, body {
       padding: 5px 12px;
       height: auto;
       max-height: 100%;
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
     }
 
     &_cloth {
@@ -3748,9 +3806,12 @@ html, body {
 
   &__img {
     margin-right: 30px;
+    width: 445px;
+    min-width: 445px;
 
     @media screen and (max-width: 991px) {
       width: 345px;
+      min-width: 345px;
     }
 
     @media screen and (max-width: 767px) {
@@ -3759,6 +3820,7 @@ html, body {
 
     @media screen and (max-width: 575px) {
       width: 100%;
+      min-width: auto;
       margin-bottom: 20px;
       margin-right: 0;
     }
@@ -3912,6 +3974,7 @@ html, body {
 
   &__img {
     width: 445px;
+    min-width: 445px;
     margin-left: 30px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -3920,9 +3983,11 @@ html, body {
 
     @media screen and (max-width: 991px) {
       width: 290px;
+      min-width: 290px;
     }
     @media screen and (max-width: 575px) {
       width: 100%;
+      min-width: auto;
       margin-bottom: 20px;
       margin-left: 0;
     }
@@ -6375,13 +6440,9 @@ html, body {
 
   &__cards {
     display: flex;
-    gap: 30px;
 
     @media screen and (max-width: 991px) {
       flex-direction: column;
-    }
-    @media screen and (max-width: 767px) {
-     gap: 20px;
     }
   }
 
@@ -6392,12 +6453,14 @@ html, body {
     width: 730px;
     background: $white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 315px;
 
     @media screen and (max-width: 1199px) {
       width: 100%;
       min-width: 100%;
       height: 310px;
       flex-direction: row;
+      margin-bottom: 20px;
     }
     @media screen and (max-width: 991px) {
       height: 310px;
@@ -6422,6 +6485,7 @@ html, body {
       flex-direction: column;
       height: 660px;
       width: 350px;
+      margin-left: 30px;
 
       @media screen and (max-width: 1199px) {
         width: 350px;
@@ -6432,6 +6496,8 @@ html, body {
         min-width: 100%;
         height: 310px;
         flex-direction: row;
+        margin-left: 0;
+        margin-top: 0;
       }
       @media screen and (max-width: 767px) {
         width: 100%;
@@ -6490,7 +6556,6 @@ html, body {
 
     @media screen and (max-width: 991px) {
       height: auto;
-      gap: 20px;
     }
   }
 }
