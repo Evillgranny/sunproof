@@ -696,6 +696,7 @@ html, body {
         top: 0;
         left: 0;
         position: absolute;
+        display: none;
 
         @media screen and (max-width: 575px) {
           -webkit-backdrop-filter: none;
@@ -955,7 +956,6 @@ html, body {
   &__content {
     background: rgba(51, 51, 51, 0.6);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
     backface-visibility: hidden;
     padding: 33px 12px;
     position: relative;
@@ -1137,7 +1137,7 @@ html, body {
 }
 
 .section_who-we {
-  background: $orangeBg;
+  background: linear-gradient(112.37deg, #FF630B 3.84%, #FDBA89 72.92%);
   overflow: hidden;
   position: relative;
 
@@ -1789,7 +1789,7 @@ html, body {
 }
 
 .orange-bg {
-  background: $orangeBg;
+  background: linear-gradient(112.37deg, #FF630B 3.84%, #FDBA89 72.92%);
 }
 
 .black-bg {
@@ -1813,7 +1813,8 @@ html, body {
 
   &__card {
     width: calc(50% - 15px);
-    background: $orangeBg;
+    background: #FFFFFF;
+    filter: drop-shadow(2px 2px 10px rgba(119, 119, 119, 0.2));
     text-decoration: none;
     padding: 28px 12px;
     height: 320px;
@@ -1852,7 +1853,7 @@ html, body {
       font-weight: 500;
       font-size: 24px;
       line-height: 29px;
-      color: $clearWhite;
+      color: #595959;
       margin-bottom: 8px;
 
       @media screen and (max-width: 575px) {
@@ -1869,7 +1870,7 @@ html, body {
     &__description {
       font-size: 16px;
       line-height: 19px;
-      color: $clearWhite;
+      color: #595959;
       @media screen and (max-width: 575px) {
         font-size: 10px;
         line-height: 12px;
@@ -6388,7 +6389,7 @@ html, body {
   }
 
   &__orange {
-    background: $orangeBg;
+    background: linear-gradient(112.37deg, #FF630B 3.84%, #FDBA89 72.92%), #F8F8F8;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     min-height: 315px;
