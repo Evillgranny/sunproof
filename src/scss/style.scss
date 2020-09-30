@@ -5412,6 +5412,9 @@ html, body {
   display: flex;
   width: calc(100% + 30px);
   margin-left: -30px;
+  align-items: flex-start;
+}
+
 
   @media screen and (max-width: 991px) {
     flex-wrap: wrap;
